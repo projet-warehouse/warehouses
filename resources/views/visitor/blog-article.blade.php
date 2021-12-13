@@ -10,7 +10,7 @@
 						<div class="bread-inner">
 							<ul class="bread-list">
 								<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-								<li class="active"><a href="blog-single.html">Blog Single Sidebar</a></li>
+								<li class="active"><a href="/blog-article">Blog Single Sidebar</a></li>
 							</ul>
 						</div>
 					</div>
@@ -48,10 +48,10 @@
 												<div class="content-tags">
 													<h4>Tags:</h4>
 													<ul class="tag-inner">
-														<li><a href="#">Glass</a></li>
-														<li><a href="#">Pant</a></li>
-														<li><a href="#">t-shirt</a></li>
-														<li><a href="#">swater</a></li>
+														<li><a href="">Glass</a></li>
+														<li><a href="">Pant</a></li>
+														<li><a href="">t-shirt</a></li>
+														<li><a href="">swater</a></li>
 													</ul>
 												</div>
 											</div>
@@ -68,31 +68,31 @@
 												<h4>Alisa harm <span>At 8:59 pm On Feb 28, 2018</span></h4>
 												<p>Enthusiastically leverage existing premium quality vectors with enterprise-wide innovation collaboration Phosfluorescently leverage others enterprisee  Phosfluorescently leverage.</p>
 												<div class="button">
-													<a href="#" class="btn"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+													<a href="" class="btn"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
 												</div>
 											</div>
 										</div>
 										<!-- End Single Comment -->
 										<!-- Single Comment -->
 										<div class="single-comment left">
-											<img src="https://via.placeholder.com/80x80" alt="#">
+											<img src="https://via.placeholder.com/80x80" alt="">
 											<div class="content">
 												<h4>john deo <span>Feb 28, 2018 at 8:59 pm</span></h4>
 												<p>Enthusiastically leverage existing premium quality vectors with enterprise-wide innovation collaboration Phosfluorescently leverage others enterprisee  Phosfluorescently leverage.</p>
 												<div class="button">
-													<a href="#" class="btn"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+													<a href="" class="btn"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
 												</div>
 											</div>
 										</div>
 										<!-- End Single Comment -->
 										<!-- Single Comment -->
 										<div class="single-comment">
-											<img src="https://via.placeholder.com/80x80" alt="#">
+											<img src="https://via.placeholder.com/80x80" alt="">
 											<div class="content">
 												<h4>megan mart <span>Feb 28, 2018 at 8:59 pm</span></h4>
 												<p>Enthusiastically leverage existing premium quality vectors with enterprise-wide innovation collaboration Phosfluorescently leverage others enterprisee  Phosfluorescently leverage.</p>
 												<div class="button">
-													<a href="#" class="btn"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+													<a href="" class="btn"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
 												</div>
 											</div>
 										</div>
@@ -104,7 +104,7 @@
 										<div class="reply-head">
 											<h2 class="reply-title">Leave a Comment</h2>
 											<!-- Comment Form -->
-											<form class="form" action="#">
+											<form class="form" action="">
 												<div class="row">
 													<div class="col-lg-6 col-md-6 col-12">
 														<div class="form-group">
@@ -144,7 +144,7 @@
 							<div class="single-widget search">
 								<div class="form">
 									<input type="email" placeholder="Search Here...">
-									<a class="button" href="#"><i class="fa fa-search"></i></a>
+									<a class="button" href=""><i class="fa fa-search"></i></a>
 								</div>
 							</div>
 							<!--/ End Single Widget -->
@@ -152,11 +152,11 @@
 							<div class="single-widget category">
 								<h3 class="title">Blog Categories</h3>
 								<ul class="categor-list">
-									<li><a href="#">Men's Apparel</a></li>
-									<li><a href="#">Women's Apparel</a></li>
-									<li><a href="#">Bags Collection</a></li>
-									<li><a href="#">Accessories</a></li>
-									<li><a href="#">Sun Glasses</a></li>
+									<li><a href="">Men's Apparel</a></li>
+									<li><a href="">Women's Apparel</a></li>
+									<li><a href="">Bags Collection</a></li>
+									<li><a href="">Accessories</a></li>
+									<li><a href="">Sun Glasses</a></li>
 								</ul>
 							</div>
 							<!--/ End Single Widget -->
@@ -166,10 +166,10 @@
 								<!-- Single Post -->
 								<div class="single-post">
 									<div class="image">
-										<img src="https://via.placeholder.com/100x100" alt="#">
+										<img src="https://via.placeholder.com/100x100" alt="">
 									</div>
 									<div class="content">
-										<h5><a href="#">Top 10 Beautyful Women Dress in the world</a></h5>
+										<h5><a href="">Top 10 Beautyful Women Dress in the world</a></h5>
 										<ul class="comment">
 											<li><i class="fa fa-calendar" aria-hidden="true"></i>Jan 11, 2020</li>
 											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>35</li>
@@ -197,7 +197,7 @@
 										<img src="https://via.placeholder.com/100x100" alt="#">
 									</div>
 									<div class="content">
-										<h5><a href="#">Top 10 Beautyful Women Dress in the world</a></h5>
+										<h5><a href="">Top 10 Beautyful Women Dress in the world</a></h5>
 										<ul class="comment">
 											<li><i class="fa fa-calendar" aria-hidden="true"></i>June 09, 2019</li>
 											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>44</li>
@@ -213,13 +213,13 @@
 							<div class="single-widget side-tags">
 								<h3 class="title">Tags</h3>
 								<ul class="tag">
-									<li><a href="#">business</a></li>
-									<li><a href="#">wordpress</a></li>
-									<li><a href="#">html</a></li>
-									<li><a href="#">multipurpose</a></li>
-									<li><a href="#">education</a></li>
-									<li><a href="#">template</a></li>
-									<li><a href="#">Ecommerce</a></li>
+									<li><a href="">business</a></li>
+									<li><a href="">wordpress</a></li>
+									<li><a href="">html</a></li>
+									<li><a href="">multipurpose</a></li>
+									<li><a href="">education</a></li>
+									<li><a href="">template</a></li>
+									<li><a href="">Ecommerce</a></li>
 								</ul>
 							</div>
 							<!--/ End Single Widget -->
@@ -230,7 +230,7 @@
 									<h4>Subscribe & get news <br> latest updates.</h4>
 									<div class="form-inner">
 										<input type="email" placeholder="Enter your email">
-										<a href="#">Submit</a>
+										<a href="">Submit</a>
 									</div>
 								</div>
 							</div>

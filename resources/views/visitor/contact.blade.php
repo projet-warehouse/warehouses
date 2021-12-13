@@ -9,8 +9,8 @@
 				<div class="col-12">
 					<div class="bread-inner">
 						<ul class="bread-list">
-							<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-							<li class="active"><a href="blog-single.html">Contact</a></li>
+							<li><a href="/">Home<i class="ti-arrow-right"></i></a></li>
+							<li class="active"><a href="/contact">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -120,7 +120,7 @@
 						<div class="inner">
 							<h4>Newsletter</h4>
 							<p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
-							<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+							<form action="" method="get" target="_blank" class="newsletter-inner">
 								<input name="EMAIL" placeholder="Your email address" required="" type="email">
 								<button class="btn">Subscribe</button>
 							</form>
