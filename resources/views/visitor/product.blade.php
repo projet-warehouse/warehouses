@@ -517,7 +517,7 @@
     </div>
     <!-- Modal end -->
 				
-    @include('visitor/footer')
+	@include('layout/footer')
 
     <!--fin footer-->
 	

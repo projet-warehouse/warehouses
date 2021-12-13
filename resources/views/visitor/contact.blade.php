@@ -135,7 +135,7 @@
 	
 	<!--debut footer-->
 
-    @include('visitor/footer')
+	@include('layout/footer')
 
     <!--fin footer-->
 	
