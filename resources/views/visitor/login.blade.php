@@ -9,8 +9,8 @@
 					<div class="col-12">
 						<div class="bread-inner">
 							<ul class="bread-list">
-								<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-								<li class="active"><a href="blog-single.html">Login</a></li>
+								<li><a href="/">Home<i class="ti-arrow-right"></i></a></li>
+								<li class="active"><a href="/login">Login</a></li>
 							</ul>
 						</div>
 					</div>
@@ -45,12 +45,12 @@
 									<div class="col-12">
 										<div class="form-group login-btn">
 											<button class="btn" type="submit">Login</button>
-											<a href="register.html" class="btn">Register</a>
+											<a href="/register" class="btn">Register</a>
 										</div>
 										<div class="checkbox">
 											<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">Remember me</label>
 										</div>
-										<a href="#" class="lost-pass">Lost your password?</a>
+										<a href="" class="lost-pass">Lost your password?</a>
 									</div>
 								</div>
 							</form>

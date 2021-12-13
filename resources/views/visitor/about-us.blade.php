@@ -9,8 +9,8 @@
 				<div class="col-12">
 					<div class="bread-inner">
 						<ul class="bread-list">
-							<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-							<li class="active"><a href="blog-single.html">About Us</a></li>
+							<li><a href="/">Home<i class="ti-arrow-right"></i></a></li>
+							<li class="active"><a href="/about">About Us</a></li>
 						</ul>
 					</div>
 				</div>
@@ -29,8 +29,8 @@
 							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis unde sunt in culpa qui officia deserunt mollit anim id est laborum.  sed ut perspiciatis unde omnis iste natus error sit voluptatem Excepteu </p>
 							<p>sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspi deserunt mollit anim id est laborum. sed ut perspi.</p>
 							<div class="button">
-								<a href="blog.html" class="btn">Our Blog</a>
-								<a href="contact.html" class="btn primary">Contact Us</a>
+								<a href="/blog" class="btn">Our Blog</a>
+								<a href="/contact" class="btn primary">Contact Us</a>
 							</div>
 						</div>
 					</div>
@@ -77,10 +77,10 @@
 							<!-- Social -->
 							<div class="social-links">
 								<ul class="social">
-									<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-behance"></i></a></li>
-									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href=""><i class="fa fa-facebook-f"></i></a></li>
+									<li><a href=""><i class="fa fa-twitter"></i></a></li>
+									<li><a href=""><i class="fa fa-behance"></i></a></li>
+									<li><a href=""><i class="fa fa-instagram"></i></a></li>
 								</ul>
 							</div>
 							<!-- End Social -->
@@ -98,17 +98,17 @@
 						<div class="info-head">
 							<!-- Info Box -->
 							<div class="info-box">
-								<h4 class="name"><a href="#">Jhone digo</a></h4>
+								<h4 class="name"><a href="">Jhone digo</a></h4>
 								<span class="designation">Markeitng</span>
 							</div>
 							<!-- End Info Box -->
 							<!-- Social -->
 							<div class="social-links">
 								<ul class="social">
-									<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-behance"></i></a></li>
-									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href=""><i class="fa fa-facebook-f"></i></a></li>
+									<li><a href=""><i class="fa fa-twitter"></i></a></li>
+									<li><a href=""><i class="fa fa-behance"></i></a></li>
+									<li><a href=""><i class="fa fa-instagram"></i></a></li>
 								</ul>
 							</div>
 							<!-- End Social -->
@@ -133,10 +133,10 @@
 							<!-- Social -->
 							<div class="social-links">
 								<ul class="social">
-									<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-behance"></i></a></li>
-									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href=""><i class="fa fa-facebook-f"></i></a></li>
+									<li><a href=""><i class="fa fa-twitter"></i></a></li>
+									<li><a href=""><i class="fa fa-behance"></i></a></li>
+									<li><a href=""><i class="fa fa-instagram"></i></a></li>
 								</ul>
 							</div>
 							<!-- End Social -->
@@ -161,10 +161,10 @@
 							<!-- Social -->
 							<div class="social-links">
 								<ul class="social">
-									<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-behance"></i></a></li>
-									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href=""><i class="fa fa-facebook-f"></i></a></li>
+									<li><a href=""><i class="fa fa-twitter"></i></a></li>
+									<li><a href=""><i class="fa fa-behance"></i></a></li>
+									<li><a href=""><i class="fa fa-instagram"></i></a></li>
 								</ul>
 							</div>
 							<!-- End Social -->
@@ -232,7 +232,7 @@
 						<div class="inner">
 							<h4>Newsletter</h4>
 							<p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
-							<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+							<form action="" method="get" target="_blank" class="newsletter-inner">
 								<input name="EMAIL" placeholder="Your email address" required="" type="email">
 								<button class="btn">Subscribe</button>
 							</form>
