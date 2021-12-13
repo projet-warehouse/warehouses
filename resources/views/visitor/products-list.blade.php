@@ -9,8 +9,8 @@
 					<div class="col-12">
 						<div class="bread-inner">
 							<ul class="bread-list">
-								<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-								<li class="active"><a href="blog-single.html">Shop List</a></li>
+								<li><a href="/">Home<i class="ti-arrow-right"></i></a></li>
+								<li class="active"><a href="/products-list">Shop List</a></li>
 							</ul>
 						</div>
 					</div>
@@ -29,13 +29,13 @@
 								<div class="single-widget category">
 									<h3 class="title">Categories</h3>
 									<ul class="categor-list">
-										<li><a href="#">T-shirts</a></li>
-										<li><a href="#">jacket</a></li>
-										<li><a href="#">jeans</a></li>
-										<li><a href="#">sweatshirts</a></li>
-										<li><a href="#">trousers</a></li>
-										<li><a href="#">kitwears</a></li>
-										<li><a href="#">accessories</a></li>
+										<li><a href="">T-shirts</a></li>
+										<li><a href="">jacket</a></li>
+										<li><a href="">jeans</a></li>
+										<li><a href="">sweatshirts</a></li>
+										<li><a href="">trousers</a></li>
+										<li><a href="">kitwears</a></li>
+										<li><a href="">accessories</a></li>
 									</ul>
 								</div>
 								<!--/ End Single Widget -->
@@ -74,7 +74,7 @@
 											<img src="https://via.placeholder.com/75x75" alt="#">
 										</div>
 										<div class="content">
-											<h5><a href="#">Girls Dress</a></h5>
+											<h5><a href="">Girls Dress</a></h5>
 											<p class="price">$99.50</p>
 											<ul class="reviews">
 												<li class="yellow"><i class="ti-star"></i></li>
@@ -89,10 +89,10 @@
 									<!-- Single Post -->
 									<div class="single-post first">
 										<div class="image">
-											<img src="https://via.placeholder.com/75x75" alt="#">
+											<img src="https://via.placeholder.com/75x75" alt="">
 										</div>
 										<div class="content">
-											<h5><a href="#">Women Clothings</a></h5>
+											<h5><a href="">Women Clothings</a></h5>
 											<p class="price">$99.50</p>
 											<ul class="reviews">
 												<li class="yellow"><i class="ti-star"></i></li>
@@ -107,10 +107,10 @@
 									<!-- Single Post -->
 									<div class="single-post first">
 										<div class="image">
-											<img src="https://via.placeholder.com/75x75" alt="#">
+											<img src="https://via.placeholder.com/75x75" alt="">
 										</div>
 										<div class="content">
-											<h5><a href="#">Man Tshirt</a></h5>
+											<h5><a href="">Man Tshirt</a></h5>
 											<p class="price">$99.50</p>
 											<ul class="reviews">
 												<li class="yellow"><i class="ti-star"></i></li>
@@ -128,11 +128,11 @@
 								<div class="single-widget category">
 									<h3 class="title">Manufacturers</h3>
 									<ul class="categor-list">
-										<li><a href="#">Forever</a></li>
-										<li><a href="#">giordano</a></li>
-										<li><a href="#">abercrombie</a></li>
-										<li><a href="#">ecko united</a></li>
-										<li><a href="#">zara</a></li>
+										<li><a href="">Forever</a></li>
+										<li><a href="">giordano</a></li>
+										<li><a href="">abercrombie</a></li>
+										<li><a href="">ecko united</a></li>
+										<li><a href="">zara</a></li>
 									</ul>
 								</div>
 								<!--/ End Single Widget -->
@@ -163,8 +163,8 @@
 										</div>
 									</div>
 									<ul class="view-mode">
-										<li><a href="shop-grid.html"><i class="fa fa-th-large"></i></a></li>
-										<li class="active"><a href="shop-list.html"><i class="fa fa-th-list"></i></a></li>
+										<li><a href="/products-grid"><i class="fa fa-th-large"></i></a></li>
+										<li class="active"><a href="/products-list"><i class="fa fa-th-list"></i></a></li>
 									</ul>
 								</div>
 								<!--/ End Shop Top -->
@@ -184,11 +184,11 @@
 													<div class="button-head">
 														<div class="product-action">
 															<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-															<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-															<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+															<a title="Wishlist" href=""><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+															<a title="Compare" href=""><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" href="">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -215,7 +215,7 @@
 													</div>
 												</div>
 												<p class="des">nteger enim purus, posuere at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum.  Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis We are creative company here are many variation generators on the Internet tend to chunks as necessary interdum</p>
-												<a href="#" class="btn">But Now!</a>
+												<a href="" class="btn">But Now!</a>
 											</div>
 										</div>
 									</div>
@@ -234,11 +234,11 @@
 													<div class="button-head">
 														<div class="product-action">
 															<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-															<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-															<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+															<a title="Wishlist" href=""><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+															<a title="Compare" href=""><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" href="">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -285,11 +285,11 @@
 													<div class="button-head">
 														<div class="product-action">
 															<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-															<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-															<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+															<a title="Wishlist" href=""><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+															<a title="Compare" href=""><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" href="">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -316,7 +316,7 @@
 													</div>
 												</div>
 												<p class="des">nteger enim purus, posuere at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum.  Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis We are creative company here are many variation generators on the Internet tend to chunks as necessary interdum</p>
-												<a href="#" class="btn">But Now!</a>
+												<a href="" class="btn">But Now!</a>
 											</div>
 										</div>
 									</div>
@@ -340,7 +340,7 @@
 															<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
 														</div>
 														<div class="product-action-2">
-															<a title="Add to cart" href="#">Add to cart</a>
+															<a title="Add to cart" href="">Add to cart</a>
 														</div>
 													</div>
 												</div>
@@ -367,7 +367,7 @@
 													</div>
 												</div>
 												<p class="des">nteger enim purus, posuere at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum.  Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis We are creative company here are many variation generators on the Internet tend to chunks as necessary interdum</p>
-												<a href="#" class="btn">But Now!</a>
+												<a href="" class="btn">But Now!</a>
 											</div>
 										</div>
 									</div>
@@ -377,11 +377,11 @@
 									<!-- Pagination -->
 									<div class="pagination">
 										<ul class="pagination-list">
-											<li><a href="#"><i class="ti-arrow-left"></i></a></li>
-											<li class="active"><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-											<li><a href="#"><i class="ti-arrow-right"></i></a></li>
+											<li><a href=""><i class="ti-arrow-left"></i></a></li>
+											<li class="active"><a href="">1</a></li>
+											<li><a href="">2</a></li>
+											<li><a href="">3</a></li>
+											<li><a href=""><i class="ti-arrow-right"></i></a></li>
 										</ul>
 									</div>
 									<!--/ End Pagination -->
@@ -403,7 +403,7 @@
 							<div class="inner">
 								<h4>Newsletter</h4>
 								<p> Subscribe to our newsletter and get <span>10%</span> off your first purchase</p>
-								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+								<form action="" method="get" target="_blank" class="newsletter-inner">
 									<input name="EMAIL" placeholder="Your email address" required="" type="email">
 									<button class="btn">Subscribe</button>
 								</form>
@@ -459,7 +459,7 @@
 													<i class="yellow fa fa-star"></i>
 													<i class="fa fa-star"></i>
 												</div>
-												<a href="#"> (1 customer review)</a>
+												<a href=""> (1 customer review)</a>
 											</div>
 											<div class="quickview-stock">
 												<span><i class="fa fa-check-circle-o"></i> in stock</span>
@@ -509,17 +509,17 @@
 											<!--/ End Input Order -->
 										</div>
 										<div class="add-to-cart">
-											<a href="#" class="btn">Add to cart</a>
-											<a href="#" class="btn min"><i class="ti-heart"></i></a>
-											<a href="#" class="btn min"><i class="fa fa-compress"></i></a>
+											<a href="" class="btn">Add to cart</a>
+											<a href="" class="btn min"><i class="ti-heart"></i></a>
+											<a href="" class="btn min"><i class="fa fa-compress"></i></a>
 										</div>
 										<div class="default-social">
 											<h4 class="share-now">Share:</h4>
 											<ul>
-												<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a class="youtube" href="#"><i class="fa fa-pinterest-p"></i></a></li>
-												<li><a class="dribbble" href="#"><i class="fa fa-google-plus"></i></a></li>
+												<li><a class="facebook" href=""><i class="fa fa-facebook"></i></a></li>
+												<li><a class="twitter" href=""><i class="fa fa-twitter"></i></a></li>
+												<li><a class="youtube" href=""><i class="fa fa-pinterest-p"></i></a></li>
+												<li><a class="dribbble" href=""><i class="fa fa-google-plus"></i></a></li>
 											</ul>
 										</div>
 									</div>
