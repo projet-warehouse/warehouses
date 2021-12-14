@@ -41,9 +41,14 @@ Route::get('/contact', function () {
     return view('visitor/contact');
 })->name('contact');
 
-Route::get('/myaccount', function () {
+//user authentification
+Route::middleware(['auth:sanctum', 'verified'])->get('/myaccount', function () {
     return view('visitor/myaccount');
 })->name('myaccount');
+/*
+Route::get('/myaccount', function () {
+    return view('visitor/myaccount');
+})->name('myaccount'); */
 
 
 Route::get('/login', function () {
@@ -73,3 +78,7 @@ Route::get('/products-list', function () {
 Route::get('/product', function () {
     return view('visitor/product');
 })->name('productDetails');
+
+/* Route::middleware(['auth:sanctum', 'verified','auth'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard'); */
