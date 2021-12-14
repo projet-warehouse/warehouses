@@ -12,16 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
+
+
+
 //Page d'accueil
 Route::get('/', function () {
     return view('visitor/index');
 })->name('home');
-
-//Page de conenxion
-Route::get('/login', function () {
-    return view('visitor/login');
-})->name('login');
-
 
 //user authentification
 Route::middleware(['auth:sanctum', 'verified'])->get('/myaccount', function () {
@@ -29,6 +28,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/myaccount', function () {
 })->name('myaccount');
 
 
+//Page de conenxion
+Route::get('/login', function () {
+    return view('visitor/login');
+})->name('login');
 
 Route::get('/blog', function () {
     return view('visitor/blog');
@@ -91,3 +94,29 @@ Route::get('/product', function () {
 /* Route::middleware(['auth:sanctum', 'verified','auth'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard'); */
+
+
+
+
+//Dashboard panel
+Route::middleware(['auth:sanctum', 'verified', 'auth'])->get('/dashboard', function () {
+    return view('admin/dashboard');
+})->name('lightDashboard');
+
+
+
+Route::get('/dashboard2', function () {
+    return view('admin/dashboard2');
+})->name('darkDashboard');
+
+Route::get('/compose', function () {
+    return view('admin/pages/email/compose');
+})->name('composeMail');
+
+Route::get('/inbox', function () {
+    return view('admin/pages/email/inbox');
+})->name('inboxMail');
+
+Route::get('/read', function () {
+    return view('admin/pages/email/read');
+})->name('readMail');

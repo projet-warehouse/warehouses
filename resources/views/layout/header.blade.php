@@ -126,7 +126,7 @@
                                             <a href="">Bienvenu   {{Auth::user()->name}}
                                             <ul class="submenu curency">
                                                 <li class="menu-item">
-                                                    <a href="/admin/dashboard">Acceder au dashboard</a>
+                                                    <a href="/dashboard">Acceder au dashboard</a>
                                                 </li>
                                             </ul>
                                         </li>
