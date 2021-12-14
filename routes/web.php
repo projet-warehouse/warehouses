@@ -41,6 +41,11 @@ Route::get('/contact', function () {
     return view('visitor/contact');
 })->name('contact');
 
+Route::get('/myaccount', function () {
+    return view('visitor/myaccount');
+})->name('myaccount');
+
+
 Route::get('/login', function () {
     return view('visitor/login');
 })->name('login');
