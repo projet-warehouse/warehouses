@@ -12,14 +12,23 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//Page d'accueil
 Route::get('/', function () {
     return view('visitor/index');
 })->name('home');
 
-Route::get('/about', function () {
-    return view('visitor/about-us');
-})->name('about');
+//Page de conenxion
+Route::get('/login', function () {
+    return view('visitor/login');
+})->name('login');
+
+
+//user authentification
+Route::middleware(['auth:sanctum', 'verified'])->get('/myaccount', function () {
+    return view('visitor/myaccount');
+})->name('myaccount');
+
+
 
 Route::get('/blog', function () {
     return view('visitor/blog');
@@ -41,19 +50,19 @@ Route::get('/contact', function () {
     return view('visitor/contact');
 })->name('contact');
 
-//user authentification
-Route::middleware(['auth:sanctum', 'verified'])->get('/myaccount', function () {
-    return view('visitor/myaccount');
-})->name('myaccount');
+Route::get('/about', function () {
+    return view('visitor/about-us');
+})->name('about');
+
+
+
 /*
 Route::get('/myaccount', function () {
     return view('visitor/myaccount');
 })->name('myaccount'); */
 
 
-Route::get('/login', function () {
-    return view('visitor/login');
-})->name('login');
+
 
 Route::get('/mail-success', function () {
     return view('visitor/mail-success');
