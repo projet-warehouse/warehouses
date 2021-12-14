@@ -1,4 +1,16 @@
-			<div class="page-content">
+@extends('admin.partials.panel')
+
+@section('content')
+
+<div class="main-wrapper">
+
+  @include('admin/partials/themes')
+
+  @include('admin/partials/sidebar')
+
+  @include('admin/partials/navbar')
+
+    <div class="page-content">
         
           <div class="row inbox-wrapper">
             <div class="col-lg-12">
@@ -100,3 +112,5 @@
           </div>
 
       </div>
+      @include('admin/partials/footer')
+@endsection

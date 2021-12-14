@@ -1,3 +1,17 @@
+<link rel="stylesheet" href="{{asset('admin_assets/vendors/fullcalendar/main.min.css')}}">
+<script src="{{asset('admin_assets/js/fullcalendar.js')}}"></script>
+
+@extends('admin.partials.panel')
+
+@section('content')
+
+<div class="main-wrapper">
+
+  @include('admin/partials/themes')
+
+  @include('admin/partials/sidebar')
+
+  @include('admin/partials/navbar')
 
 			<div class="page-content">
 
@@ -84,3 +98,5 @@
 				</div>
 
 			</div>
+	@include('admin/partials/footer')
+@endsection

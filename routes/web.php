@@ -93,3 +93,23 @@ Route::get('/inbox', function () {
 Route::get('/read', function () {
     return view('admin/pages/email/read');
 })->name('readMail');
+
+Route::get('/calendar', function () {
+    return view('admin/pages/apps/calendar');
+})->name('calendar');
+
+Route::get('/table', function () {
+    return view('admin/pages/tables/table');
+})->name('table');
+
+Route::get('/invoice', function () {
+    return view('admin/pages/general/invoice');
+})->name('invoice');
+
+Route::get('/admin_login', function () {
+    return view('admin/pages/auth/login');
+})->name('adminlogin');
+
+Route::get('/admin_register', function () {
+    return view('admin/pages/auth/register');
+})->name('adminregister');

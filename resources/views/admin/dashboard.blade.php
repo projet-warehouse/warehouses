@@ -1,15 +1,17 @@
-<link rel="stylesheet" href="{{asset('admin_assets/css/demo_1/style.css')}}">
+{{-- <link rel="stylesheet" href="{{asset('admin_assets/css/demo_1/style.css')}}"> --}}
 
-@include('admin/partials/panel')
+@extends('admin.partials.panel')
 
+@section('content')
 
-@include('admin/partials/themes')
+<div class="main-wrapper">
 
-		<div class="page-wrapper">
-					
-			<!-- partial -->
-      @include('admin/partials/navbar')
-			<!-- partial -->
+  @include('admin/partials/themes')
+
+  @include('admin/partials/sidebar')
+
+  @include('admin/partials/navbar')
+
 
 			<div class="page-content">
 
@@ -435,35 +437,6 @@
         </div> <!-- row -->
 
 			</div>
-
-			<!-- partial:partials/_footer.html -->
-			<footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between">
-				<p class="text-muted text-center text-md-left">Copyright © 2021 <a href="https://www.nobleui.com" target="_blank">NobleUI</a>. All rights reserved</p>
-				<p class="text-muted text-center text-md-left mb-0 d-none d-md-block">Handcrafted With <i class="mb-1 text-primary ml-1 icon-small" data-feather="heart"></i></p>
-			</footer>
-			<!-- partial -->
+      @include('admin/partials/footer')
+@endsection
 		
-		</div>
-	</div>
-
-	<!-- core:js -->
-	<script src="{{asset('admin_assets/vendors/core/core.js')}}"></script>
-	<!-- endinject -->
-  <!-- plugin js for this page -->
-  <script src="{{asset('admin_assets/vendors/chartjs/Chart.min.js')}}"></script>
-  <script src="{{asset('admin_assets/vendors/jquery.flot/jquery.flot.js')}}"></script>
-  <script src="{{asset('admin_assets/vendors/jquery.flot/jquery.flot.resize.js')}}"></script>
-  <script src="{{asset('admin_assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
-  <script src="{{asset('admin_assets/vendors/apexcharts/apexcharts.min.js')}}"></script>
-  <script src="{{asset('admin_assets/vendors/progressbar.js/progressbar.min.js')}}"></script>
-	<!-- end plugin js for this page -->
-	<!-- inject:js -->
-	<script src="{{asset('admin_assets/vendors/feather-icons/feather.min.js')}}"></script>
-	<script src="{{asset('admin_assets/js/template.js')}}"></script>
-	<!-- endinject -->
-  <!-- custom js for this page -->
-  <script src="{{asset('admin_assets/js/dashboard.js')}}"></script>
-  <script src="{{asset('admin_assets/js/datepicker.js')}}"></script>
-	<!-- end custom js for this page -->
-</body>
-</html>    
