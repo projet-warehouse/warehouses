@@ -68,3 +68,23 @@ Route::get('/products-list', function () {
 Route::get('/product', function () {
     return view('visitor/product');
 })->name('productDetails');
+
+Route::get('/dashboard', function () {
+    return view('admin/dashboard');
+})->name('lightDashboard');
+
+Route::get('/dashboard2', function () {
+    return view('admin/dashboard2');
+})->name('darkDashboard');
+
+Route::get('/compose', function () {
+    return view('admin/pages/email/compose');
+})->name('composeMail');
+
+Route::get('/inbox', function () {
+    return view('admin/pages/email/inbox');
+})->name('inboxMail');
+
+Route::get('/read', function () {
+    return view('admin/pages/email/read');
+})->name('readMail');
