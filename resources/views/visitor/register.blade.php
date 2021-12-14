@@ -62,8 +62,8 @@
 									</div>
 									<div class="col-12">
 										<div class="form-group login-btn">
-											<button class="btn" type="submit">Se connecter</button>
-											<a href="login.html" class="btn">S'enregistrer</a>
+											<button class="btn" type="submit">S'enregistrer</button>
+											<a href="login.html" class="btn">Se connecter</a>
 										</div>
 										<div class="checkbox">
 											<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">S'inscrire au Newsletter</label>
