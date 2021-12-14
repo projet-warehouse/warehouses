@@ -1,5 +1,4 @@
 @include('layout/header')
-
 		<!-- Header Inner -->
 		<div class="header-inner">
 			<div class="container">
