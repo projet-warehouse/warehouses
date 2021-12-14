@@ -1,0 +1,126 @@
+section.account {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.account__menu,
+.account__card {
+    border: 1px solid #989898;
+    border-radius: 0.3rem;
+    height: 42em;
+}
+
+.account__card {
+    width: 70em;
+}
+
+.account__menu--list > *:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.account__menu--list {
+    padding: 1.5rem;
+}
+
+.account__menu--link:hover,
+.account__menu--link:focus {
+    border-bottom: 1px solid black !important;
+    cursor: pointer;
+}
+
+.account__menu--item i {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    padding-right: 0.8rem;
+}
+
+.account__card--header {
+    border-bottom: 1px solid #989898;
+}
+.account__card--title {
+    margin: 0;
+    padding: 1rem;
+}
+
+.account__card--body {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(30em, 1fr));
+    grid-auto-rows: max-content;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.account__card--item,
+.account__card--item2,
+.account__card--item3,
+.account__card--item4 {
+    border: 1px solid #989898;
+    border-radius: 0.3rem;
+}
+
+.account__card--item {
+    grid-column: 1;
+    grid-row: 1;
+}
+.account__card--item2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+.account__card--item3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.account__card--item4 {
+    grid-column: 2;
+    grid-row: 2;
+}
+.card__item--header {
+    border-bottom: 1px solid #989898;
+}
+
+.card__item--header {
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.card__item--body {
+    padding: 1rem;
+}
+
+.card__item--body .mtdp {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.btn__card {
+    position: relative;
+    padding: 1rem 5.5rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    background: transparent;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(102, 102, 102, 0.2),
+        0 3px 6px rgba(102, 102, 102, 0.2);
+}
+
+.btn__card i {
+    position: absolute;
+    left: 2rem;
+    top: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.card__item--header {
+    position: relative;
+}
+
+.card__item--header i {
+    position: absolute;
+    right: 0.6rem;
+}
