@@ -19,7 +19,10 @@
 	<link rel="stylesheet" href="{{asset('admin_assets/fonts/feather-font/css/iconfont.css')}}">
 	<link rel="stylesheet" href="{{asset('admin_assets/vendors/flag-icon-css/css/flag-icon.min.css')}}">
 	<!-- endinject -->
-  <link rel="stylesheet" href="{{asset('admin_assets/css/demo_1/style.css')}}">
+  <div id="themeColor">
+    {{-- <link rel='stylesheet' href='{{asset('admin_assets/css/demo_1/style.css')}}' id='themeColor'> --}}
+
+  </div>
   <link rel="shortcut icon" href="{{asset('admin_assets/images/favicon.png')}}" />
 </head>
 <body>
@@ -28,7 +31,7 @@
 		<!-- partial:partials/_sidebar.html -->
 		<nav class="sidebar">
       <div class="sidebar-header">
-        <a href="#" class="sidebar-brand">
+        <a href="" class="sidebar-brand">
           Noble<span>UI</span>
         </a>
         <div class="sidebar-toggler not-active">
@@ -138,7 +141,6 @@
 		
 		</div>
 	</div>
-
 	<!-- core:js -->
 	<script src="{{asset('admin_assets/vendors/core/core.js')}}"></script>
 	<!-- endinject -->
@@ -153,7 +155,7 @@
   <script src="{{asset('admin_assets/vendors/simplemde/simplemde.min.js')}}"></script>
   <script src="{{asset('admin_assets/vendors/moment/moment.min.js')}}"></script>
   <script src="{{asset('admin_assets/vendors/fullcalendar/main.min.js')}}"></script>
-  <script src="{{asset('admin_assets/vendors/jquery-ui/jquery-ui.min.js')}}"></script>
+  {{-- <script src="{{asset('admin_assets/vendors/jquery-ui/jquery-ui.min.js')}}"></script> --}}
   <script src="{{asset('admin_assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js')}}"></script>
   <script src="{{asset('admin_assets/vendors/datatables.net/jquery.dataTables.js')}}"></script>
 	<!-- end plugin js for this page -->

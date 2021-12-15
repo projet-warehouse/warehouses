@@ -42,8 +42,16 @@ Route::get('/contact', function () {
 })->name('contact');
 
 Route::get('/myaccount', function () {
-    return view('visitor/myaccount');
-})->name('myaccount');
+    return view('visitor/customer/index_myaccount');
+})->name('myaccountIndex');
+
+Route::get('/myaccount/order/index', function () {
+    return view('visitor/customer/order_index_myaccount');
+})->name('myaccountorder');
+
+Route::get('/myaccount/order/close', function () {
+    return view('visitor/customer/order_close_myaccount');
+})->name('myaccountorderClose');
 
 
 Route::get('/login', function () {
