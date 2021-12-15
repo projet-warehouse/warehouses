@@ -46,22 +46,17 @@ Route::middleware(['auth:sanctum' ])->group(function(){
         return view('admin.dashboard');
     })->name('dashboard');
 
+    Route::get('/compose', function () {
+        return view('admin/pages/email/compose');
+        })->name('composeMail');
 
-    return view('/admin/dashboard');
+    Route::get('/inbox', function () {
+            return view('admin/pages/email/inbox');
+        })->name('inboxMail');
 
-
-
-Route::get('/compose', function () {
-       return view('admin/pages/email/compose');
-    })->name('composeMail');
-
-   Route::get('/inbox', function () {
-        return view('admin/pages/email/inbox');
-    })->name('inboxMail');
-
-    Route::get('/read', function () {
-        return view('admin/pages/email/read');
-    })->name('readMail');
+        Route::get('/read', function () {
+            return view('admin/pages/email/read');
+        })->name('readMail');
 
 
 });
