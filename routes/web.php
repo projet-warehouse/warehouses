@@ -33,17 +33,25 @@ Route::middleware(['auth:sanctum' , 'verified'])->group(function(){
 });
 
 
-//admin parametre
-Route::middleware(['auth:sanctum' , 'verified', 'AuthAdmin' ])->group(function(){
-    Route::get('/dashboard', function(){
-        return View('admin/dashboard');
-    });
 
-    Route::get('/compose', function () {
-        return view('admin/pages/email/compose');
+
+//admin parametre
+route::get('/dashboard', function(){
+    return view('admin.dashboard');
+})->name('dashboard');
+
+route::get('redirects' , '\App\http\controllers\HomeController@index' );
+
+Route::middleware(['auth:sanctum' , 'verified'])->group(function(){
+    return view('/admin/dashboard');
+
+
+
+Route::get('/compose', function () {
+       return view('admin/pages/email/compose');
     })->name('composeMail');
 
-    Route::get('/inbox', function () {
+   Route::get('/inbox', function () {
         return view('admin/pages/email/inbox');
     })->name('inboxMail');
 
@@ -53,6 +61,8 @@ Route::middleware(['auth:sanctum' , 'verified', 'AuthAdmin' ])->group(function()
 
 
 });
+
+
 
 
 
