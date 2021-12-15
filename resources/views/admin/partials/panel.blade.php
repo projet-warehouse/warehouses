@@ -19,10 +19,6 @@
 	<link rel="stylesheet" href="{{asset('admin_assets/fonts/feather-font/css/iconfont.css')}}">
 	<link rel="stylesheet" href="{{asset('admin_assets/vendors/flag-icon-css/css/flag-icon.min.css')}}">
 	<!-- endinject -->
-  <div id="themeColor">
-    {{-- <link rel='stylesheet' href='{{asset('admin_assets/css/demo_1/style.css')}}' id='themeColor'> --}}
-
-  </div>
   <link rel="shortcut icon" href="{{asset('admin_assets/images/favicon.png')}}" />
 </head>
 <body>
