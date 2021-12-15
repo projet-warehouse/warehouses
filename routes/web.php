@@ -40,13 +40,13 @@ Route::middleware(['auth:sanctum' , 'verified'])->group(function(){
 
 route::get('redirects' , '\App\http\controllers\HomeController@index' );
 
-Route::middleware(['auth:sanctum' , 'verified'])->group(function(){
+Route::middleware(['auth:sanctum' ])->group(function(){
 
     route::get('/dashboard', function(){
         return view('admin.dashboard');
     })->name('dashboard');
 
-    
+
     return view('/admin/dashboard');
 
 
