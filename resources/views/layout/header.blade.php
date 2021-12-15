@@ -117,15 +117,29 @@
 					</div>
 					<div class="col-lg-8 col-md-12 col-12">
 						<!-- Top Right -->
-						<div class="right-content">
-							<ul class="list-main">
-								{{-- <li><i class="ti-location-pin"></i> Store location</li>
-								<li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li> --}}
-								<li><i class="ti-user"></i> <a href="/myaccount">My account</a></li>
-								<li><i class="ti-power-off"></i><a href="{{ route('login')}}">Login</a></li>
-							</ul>
-						</div>
-						<!-- End Top Right -->
+                        @if (Route::has('login'))
+
+                            <div class="right-content">
+                                @auth()
+                                <ul class="list-main">
+                                    {{-- <li><i class="ti-location-pin"></i> Store location</li>
+                                    <li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li> --}}
+                                    <li><i class="ti-user"></i> <a href="/home">Voir ma Boutique</a></li>
+                                    <li><i class="ti-power-off"></i><a href="{{ route('logout') }}">Login</a></li>
+                                </ul>
+                                @else
+
+                                <ul class="list-main">
+                                    {{-- <li><i class="ti-location-pin"></i> Store location</li>
+                                    <li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li> --}}
+                                    <li><i class="ti-power-off"></i><a href="{{ route('login') }}">Login</a></li>
+                                    @if (Route::has('register'))
+                                    <li><i class="ti-user"></i> <a href="{{ route('register')}}">Voir ma Boutique</a></li>
+                                    @endif
+                                </ul>
+                            </div>
+                            <!-- End Top Right -->
+                        @endif
 					</div>
 				</div>
 			</div>
