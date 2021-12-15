@@ -53,29 +53,6 @@
                 </div>   
             </div>
 
-            <!-- card item3 -->
-            <div class="account__card--item3">
-                <h5 class="card__item--header">
-                    eshop prime
-                </h5>
-                <div class="card__item--body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quisquam culpa sequi voluptatum quam sit temporibus</p>
-                   
-                    <button class="btn__card"><i class="fas fa-crown"></i> Abonnez vous à eshop prime </button>
-                    
-                </div>   
-            </div>
-
-            <!-- card item4 -->
-            <div class="account__card--item4">
-                <h5 class="card__item--header">
-                    crédit eshop pay
-                </h5>
-                <div class="card__item--body">
-                    <p>FCFA 0</p>
-                
-                </div>   
-            </div>
        </div>
    </div>
 </section>

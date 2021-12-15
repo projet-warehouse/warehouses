@@ -179,7 +179,11 @@
     border-bottom: 1px solid #32b87d !important;
 }
 .account__menu--item i,
-.btn__card i,
 .card__item--header i {
     color: #32b87d;
+}
+
+.concurrent-order {
+    color: #32b87d !important;
+    border-color: #32b87d !important;
 }

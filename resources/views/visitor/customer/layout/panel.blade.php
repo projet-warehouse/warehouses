@@ -7,8 +7,5 @@
         <li class="account__menu--item"><i class="fas fa-receipt"></i><a class="account__menu--link">Votre crédit</a></li>
         <li class="account__menu--item"><i class="far fa-heart"></i><a class="account__menu--link">Votre liste d'envies</a></li>
         <li class="account__menu--item"><i class="fas fa-history"></i><a class="account__menu--link">Vus récemment</a></li>
-        <li class="account__menu--item"><a class="account__menu--link">Addresses</a></li>
-        <li class="account__menu--item"><a class="account__menu--link">Modifier votre mot de passe</a></li>
-        <li class="account__menu--item"><a class="account__menu--link">Préference de communication</a></li>
     </ul>
 </div>
