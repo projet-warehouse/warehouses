@@ -207,21 +207,11 @@
 										<li class="nav-item">
 											<a href="pages/general/profile.html" class="nav-link">
 												<i data-feather="user"></i>
-												<span>Profile</span>
+												<span>Profil</span>
 											</a>
 										</li>
-										<li class="nav-item">
-											<a href="javascript:;" class="nav-link">
-												<i data-feather="edit"></i>
-												<span>Edit Profile</span>
-											</a>
-										</li>
-										<li class="nav-item">
-											<a href="javascript:;" class="nav-link">
-												<i data-feather="repeat"></i>
-												<span>Switch User</span>
-											</a>
-										</li>
+									
+									
 										<li class="nav-item">
 											<a href="javascript:;" class="nav-link">
 												<i data-feather="log-out"></i>

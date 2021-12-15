@@ -20,12 +20,13 @@ class AuthAdmin
         if(session('user_type') === 'ADMIN')
         {
             return $next($request);
+
         }
         else{
             session()->flush();
-            return Redirect()->route('visitor/login');
+            return Redirect()->route('login');
         }
-
+        return $next($request);
 
     }
 }
