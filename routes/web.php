@@ -73,3 +73,43 @@ Route::get('/products-list', function () {
 Route::get('/product', function () {
     return view('visitor/product');
 })->name('productDetails');
+
+Route::get('/dashboard', function () {
+    return view('admin/dashboard');
+})->name('lightDashboard');
+
+Route::get('/dashboard2', function () {
+    return view('admin/dashboard2');
+})->name('darkDashboard');
+
+Route::get('/compose', function () {
+    return view('admin/pages/email/compose');
+})->name('composeMail');
+
+Route::get('/inbox', function () {
+    return view('admin/pages/email/inbox');
+})->name('inboxMail');
+
+Route::get('/read', function () {
+    return view('admin/pages/email/read');
+})->name('readMail');
+
+Route::get('/calendar', function () {
+    return view('admin/pages/apps/calendar');
+})->name('calendar');
+
+Route::get('/table', function () {
+    return view('admin/pages/tables/table');
+})->name('table');
+
+Route::get('/invoice', function () {
+    return view('admin/pages/general/invoice');
+})->name('invoice');
+
+Route::get('/admin_login', function () {
+    return view('admin/pages/auth/login');
+})->name('adminlogin');
+
+Route::get('/admin_register', function () {
+    return view('admin/pages/auth/register');
+})->name('adminregister');
