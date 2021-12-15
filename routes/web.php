@@ -36,13 +36,17 @@ Route::middleware(['auth:sanctum' , 'verified'])->group(function(){
 
 
 //admin parametre
-route::get('/dashboard', function(){
-    return view('admin.dashboard');
-})->name('dashboard');
+
 
 route::get('redirects' , '\App\http\controllers\HomeController@index' );
 
 Route::middleware(['auth:sanctum' , 'verified'])->group(function(){
+
+    route::get('/dashboard', function(){
+        return view('admin.dashboard');
+    })->name('dashboard');
+
+    
     return view('/admin/dashboard');
 
 
