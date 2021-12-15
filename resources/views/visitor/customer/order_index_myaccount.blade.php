@@ -2,17 +2,7 @@
 
 @section('content')
 
-<style>
-.concurrent-order{
-    color:#f7941d !important;
-    border-color: #f7941d !important;
-}
-.orderStatus{
-    width: 180px !important;
-    text-align: center;
-    color: #fff;
-}
-</style>
+
 <!-- Breadcrumbs -->
 <div class="breadcrumbs">
     <div class="container">
