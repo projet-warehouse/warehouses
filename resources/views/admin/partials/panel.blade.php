@@ -27,7 +27,6 @@
 
   </div>
 
-
   <link rel="shortcut icon" href="{{asset('admin_assets/images/favicon.png')}}" />
 </head>
 <body>
@@ -58,11 +57,9 @@
               <span class="link-title">Dashboard</span>
             </a>
           </li>
-
           <li class="nav-item nav-category">web apps</li>
 
-          {{-- <li class="nav-item nav-category">web apps</li> --}}
-
+          {{-- <li class="nav-item nav-category">web apps</li> --}
 
           <li class="nav-item">
             <a href="/newcontroller" class="nav-link">
@@ -79,12 +76,27 @@
           </li>
 
           <li class="nav-item">
+
+            <a href="/newcontroller" class="nav-link">
+              <i class="link-icon" data-feather="users"></i>
+              <span class="link-title">Ajouter Utilisateur</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/editcontroller" class="nav-link">
+              <i class="link-icon" data-feather="edit"></i>
+              <span class="link-title">Editer Utilisateur</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+
             <a href="/addcategory" class="nav-link">
               <i class="link-icon" data-feather="gift"></i>
               <span class="link-title">Ajouter une catégorie</span>
             </a>
           </li>
-
 
           <li class="nav-item">
             <a href="/addproduct" class="nav-link">
@@ -134,6 +146,8 @@
           </li> --}}
            {{-- <li class="nav-item">
 
+          </li> --}}
+           {{-- <li class="nav-item">
             <a href="/calendar" class="nav-link">
 
               <i class="link-icon" data-feather="calendar"></i>
@@ -175,7 +189,6 @@
                 <span class="link-title">Table</span>
               </a>
             </a>
-
             <div class="collapse" id="tables">
               <ul class="nav sub-menu">
                 {{-- <li class="nav-item">
@@ -196,8 +209,7 @@
           </li>
 
           </li>
-
-
+          </li> --}}
           {{-- <li class="nav-item nav-category">Pages</li> --}}
           {{-- <li class="nav-item">
             <a href="/invoice" class="nav-link">
@@ -226,7 +238,6 @@
                 </li>
               </ul>
             </div>
-
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#errorPages" role="button" aria-expanded="false" aria-controls="errorPages">
@@ -236,8 +247,9 @@
             </a>
     </nav>
 
-          </li> --}}
 
+          </li> --}}
+          </li> --}}
     </nav>
   </div>
 

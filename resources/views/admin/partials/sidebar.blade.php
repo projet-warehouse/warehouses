@@ -309,7 +309,7 @@
 
 <link rel='stylesheet' href='{{asset('admin_assets/css/demo_1/style.css')}}' id='themeColor'>
 
-
+<link rel='stylesheet' href='{{asset('admin_assets/css/demo_1/style.css')}}' id='themeColor'>
 <nav class="settings-sidebar">
   <div class="sidebar-body">
     <a href="#" class="settings-sidebar-toggler">
@@ -368,4 +368,3 @@
       }
     }
 </script>
-
