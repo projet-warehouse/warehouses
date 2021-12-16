@@ -4,6 +4,19 @@
 
     
     @include('admin/partials/themes')
+@extends('admin.partials.panel')
+
+@section('content')
+
+<div class="main-wrapper">
+
+  @include('admin/partials/sidebar')
+
+  @include('admin/partials/navbar')
+
+    
+    {{-- @include('admin/partials/themes') --}}
+
 
 		<!-- partial -->
 	
@@ -14,7 +27,10 @@
 
 			<!-- partial -->
 
+
 			<div class="page-content">
+
+			{{-- <div class="page-content">
 
         <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
           <div>
@@ -437,6 +453,7 @@
           </div>
         </div> <!-- row -->
 
+
 			</div>
 
 			<!-- partial:partials/_footer.html -->
@@ -470,3 +487,6 @@
 	<!-- end custom js for this page -->
 </body>
 </html>    
+			</div> --}}
+      @include('admin/partials/footer')
+      @endsection
