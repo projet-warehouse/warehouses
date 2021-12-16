@@ -10,7 +10,7 @@
                 <div class="bread-inner">
                     <ul class="bread-list">
                         <li><a href="/">Acceuil<i class="ti-arrow-right"></i></a></li>
-                        <li class="active"><a href="/login">Mon compte</a></li>
+                        <li class="active"><a href="/myaccount">Mon compte</a></li>
                     </ul>
                 </div>
             </div>
