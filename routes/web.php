@@ -67,7 +67,7 @@ Route::get('/myaccount/wishlist', function () {
 
 
 Route::get('/login', function () {
-    return view('visitor/login');
+    return view('auth/login');
 })->name('login');
 
 Route::get('/mail-success', function () {
@@ -79,7 +79,7 @@ Route::get('/notfound', function () {
 })->name('notfound');
 
 Route::get('/register', function () {
-    return view('visitor/register');
+    return view('auth/register');
 })->name('register');
 
 Route::get('/products-grid', function () {
@@ -96,6 +96,12 @@ Route::get('/product', function () {
 
 // Admin Routes
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
+
+Route::get('redirects', 'App\Http\Controllers\HomeController@index');
+
 Route::get('/dashboard', function () {
     return view('admin/dashboard');
 })->name('lightDashboard');
@@ -103,6 +109,18 @@ Route::get('/dashboard', function () {
 Route::get('/newcontroller', function () {
     return view('admin/pages/newcontroller');
 })->name('newcontroller');
+
+Route::get('/editcontroller', function () {
+    return view('admin/pages/editcontroller');
+})->name('editcontroller');
+
+Route::get('/addcategory', function () {
+    return view('admin/pages/addcategory');
+})->name('addcategory');
+
+Route::get('/addproduct', function () {
+    return view('admin/pages/addproduct');
+})->name('addproduct');
 
 
 // Route::get('/compose', function () {
@@ -136,3 +154,7 @@ Route::get('/newcontroller', function () {
 // Route::get('/admin_register', function () {
 //     return view('admin/pages/auth/register');
 // })->name('adminregister');
+Route::get('/admin_register', function () {
+    return view('admin/pages/auth/register');
+})->name('adminregister');
+
