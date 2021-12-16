@@ -114,13 +114,12 @@ Route::get('/product', function () {
 
 
 
+//route admin
 
-//Dashboard panel
-/* Route::middleware(['auth:sanctum', 'verified', 'AuthAdmin'])->get('/dashboard', function () {
-    return view('admin/dashboard');
-})->name('lightDashboard'); */
-
-
+//mes routes
+route::get('/dashboard/add_user' , function(){
+    return view('admin.pages.add_user')->name('add_user');
+});
 
 
 Route::get('/dashboard', function () {
