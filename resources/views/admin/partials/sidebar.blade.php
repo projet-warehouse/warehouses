@@ -28,7 +28,7 @@
             <div class="collapse" id="emails">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="{{route('/add_categorie')}}" class="nav-link">Ajout de catégorie</a>
+                  <a href="" class="nav-link">Ajout de catégorie</a>
                 </li>
 
               </ul>
