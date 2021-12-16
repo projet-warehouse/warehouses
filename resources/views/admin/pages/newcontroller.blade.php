@@ -11,7 +11,7 @@
   @include('admin/partials/navbar')
 
 	<div class="page-content">
-        <div>
+        <div class="mb-3">
             <h4 class="mb-3 mb-md-0">Ajouter un nouveau controlleur</h4>
           </div>
         <div class="card p-4">
@@ -26,9 +26,15 @@
                         <input type="text" class="form-control" name="contact" id="contact">
                   </div>
                 </div>
-                <div class="form-group">
-                  <label >Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="example@gmail.com" name="email">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label >Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@gmail.com" name="email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label >Mot de passe</label>
+                        <input type="password" class="form-control" id="password" placeholder="" name="password">
+                    </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -39,15 +45,11 @@
                           <option>Analyste</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-5 mx-auto">
                         <label>Photo de profil</label> 
                         <input type="file" class="form-control-file" id="photo" name="photo">
                       </div>
                   </div>
-                <div class="form-group">
-                  <label >Mot de passe</label>
-                  <input type="password" class="form-control" id="password" placeholder="" name="password">
-                </div>
                 <button type="submit" class="btn btn-primary">Ajouter</button>
               </form>
         </div>
