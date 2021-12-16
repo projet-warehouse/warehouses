@@ -66,6 +66,20 @@
               <span class="link-title">Ajouter une catégorie</span>
             </a>
           </li>
+
+          <li class="nav-item">
+            <a href="/addproduct" class="nav-link">
+              <i class="link-icon" data-feather="box"></i>
+              <span class="link-title">Ajouter un produit</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/order" class="nav-link">
+              <i class="link-icon" data-feather="shopping-bag"></i>
+              <span class="link-title">Commandes</span>
+            </a>
+          </li>
           {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
               <i class="link-icon" data-feather="mail"></i>

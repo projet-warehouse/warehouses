@@ -116,6 +116,10 @@ Route::get('/addproduct', function () {
     return view('admin/pages/addproduct');
 })->name('addproduct');
 
+Route::get('/order', function () {
+    return view('admin/pages/order');
+})->name('orderManagement');
+
 
 // Route::get('/compose', function () {
 //     return view('admin/pages/email/compose');
