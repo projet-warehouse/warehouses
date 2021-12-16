@@ -57,12 +57,17 @@
                         </label>
                       </div>
                       <div class="mt-3">
+                        <a href="../../dashboard-one.html" class="btn btn-primary text-white mr-2 mb-2 mb-md-0">Sing up</a>
+
                         <a href="/dashboard" class="btn btn-primary text-white mr-2 mb-2 mb-md-0">Sing up</a>
+
                         <button type="button" class="btn btn-outline-primary btn-icon-text mb-2 mb-md-0">
                           <i class="btn-icon-prepend" data-feather="twitter"></i>
                           Sign up with twitter
                         </button>
                       </div>
+                      <a href="login.html" class="d-block mt-3 text-muted">Already a user? Sign in</a>
+
                       <a href="/admin_login" class="d-block mt-3 text-muted">Already a user? Sign in</a>
                     </form>
                   </div>

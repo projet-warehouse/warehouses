@@ -13,12 +13,12 @@
 	<link rel="icon" type="image/png" href="{{asset('images/favicon.png')}}">
 	<!-- Web Font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-	
+
    <!-- Font Awesome -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+
 	<!-- StyleSheet -->
-	
+
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
 	<!-- Magnific Popup -->
@@ -38,7 +38,7 @@
 	<!-- Owl Carousel -->
     <link rel="stylesheet" href="{{asset('css/owl-carousel.css')}}">
 	<!-- Slicknav -->
-    
+
 
 	<!-- customs css -->
 	<link rel="stylesheet" href="{{asset('css/styles.css')}}">
@@ -64,10 +64,10 @@
 	<!--<link rel="stylesheet" href="{{asset('css/color/color12.css')}}">-->
 
 	<link rel="stylesheet" href="#" id="colors">
-	
+
 </head>
 <body class="js">
-	
+
 	<!-- Preloader -->
 	<div class="preloader">
 		<div class="preloader-inner">
@@ -78,7 +78,7 @@
 		</div>
 	</div>
 	<!-- End Preloader -->
-	
+
 	<!-- Eshop Color Plate -->
 	<div class="color-plate ">
 		<a class="color-plate-icon"><i class="ti-paint-bucket"></i></a>
@@ -98,7 +98,7 @@
 		<span class="color12"></span>
 	</div>
 	<!-- /End Color Plate -->
-	
+
 	<!-- Header -->
 	<header class="header shop">
 		<!-- Topbar -->
@@ -119,11 +119,48 @@
 						<!-- Top Right -->
 						<div class="right-content">
 							<ul class="list-main">
-								{{-- <li><i class="ti-location-pin"></i> Store location</li>
-								<li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li> --}}
-								<li><i class="ti-user"></i> <a href="/myaccount">My account</a></li>
-								<li><i class="ti-power-off"></i><a href="/login">Login</a></li>
-							</ul>
+                            @if(Route::has('login'))
+                                @auth
+                                    @if(Auth::user()->user_type === 'ADMIN')
+                                        <li>
+                                            <a href="">Bienvenu   {{Auth::user()->name}}
+                                            <ul class="submenu curency">
+                                                <li class="menu-item">
+                                                    <a href="/dashboard">Acceder au dashboard</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    @else
+                                        <li>
+                                            <a href="">Bienvenu   {{Auth::user()->name}}
+                                            <ul class="submenu curency">
+                                                <li class="menu-item">
+                                                    <a href="/myaccount">Mon compte</a>
+                                                    <a href="#">Mes commandes</a>
+                                                    <a href="#">Mes favoris</a>
+                                                    <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout_form').submit() ;">Se deconnecter</a>
+                                                    <form id="logout_form" action="{{route('logout')}}" method="post">@csrf</form>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    @endif
+                                @else
+                                <ul class="submenu curency">
+                                    <li class="menu-item">
+
+                                        <a href="/register">S'inscrire</a>
+                                        <a href="/login">Se connecter</a>
+                                    </li>
+                                </ul>
+
+                                @endif
+                            @endif
+                            </ul>
+
+
+
+
+
 						</div>
 						<!-- End Top Right -->
 					</div>
@@ -137,7 +174,7 @@
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+							<a href="index.html"><img src="{{asset('images/logo.png')}}" alt="logo"></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->
