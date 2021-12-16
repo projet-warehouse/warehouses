@@ -79,7 +79,7 @@
 									<div class="navbar-collapse">	
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
-												<li class="active"><a href="#">Home</i></a>
+												<li class="active" id=""><a href="#">Home</i></a>
 													{{-- <ul class="dropdown">
 														<li><a href="index.html">Home Ecommerce V1</a></li>
 														<li><a href="index2.html">Home Ecommerce V2</a></li>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <nav class="sidebar">
       <div class="sidebar-header">
         <a href="#" class="sidebar-brand">
@@ -305,6 +306,10 @@
       </div>
     </nav>
     @include('admin/partials/themes')
+=======
+<link rel='stylesheet' href='{{asset('admin_assets/css/demo_1/style.css')}}' id='themeColor'>
+
+>>>>>>> design2Saib
 <nav class="settings-sidebar">
   <div class="sidebar-body">
     <a href="#" class="settings-sidebar-toggler">
@@ -327,20 +332,19 @@
     </div>
     <div class="theme-wrapper">
       <h6 class="text-muted mb-2">Light Theme:</h6>
-      <a class="theme-item active" onclick="themes()">
+      <a class="theme-item active" onclick="themes('light')">
         <img src="{{asset('admin_assets/images/screenshots/light.jpg')}}" alt="light theme">
       </a>
       <h6 class="text-muted mb-2">Dark Theme:</h6>
-      <a class="theme-item">
+      <a class="theme-item" onclick="themes('dark')">
         <img src="{{asset('admin_assets/images/screenshots/dark.jpg')}}" alt="light theme">
       </a>
     </div>
   </div>
 </nav>
 
-{{-- <link rel="stylesheet" href="{{asset('admin_assets/css/demo_1/style.css')}}" id="themeColor"> --}}
-
 <script>
+<<<<<<< HEAD
    var theme = document.getElementById(themeColor);
    var darkLink = "{{asset('admin_assets/css/demo_2/style.css')}}";
   function themes(){
@@ -348,3 +352,20 @@
   }
   // themes();
 </script>
+=======
+  var theme = document.getElementById('themeColor');
+    var darkLink = "{{asset('admin_assets/css/demo_2/style.css')}}";
+    var lightLink = "{{asset('admin_assets/css/demo_1/style.css')}}";
+    function themes(color) {
+      if (color == 'dark') {
+        theme.href = darkLink;
+        console.log(color)
+      }
+
+     else if (color == 'light') {
+        theme.href = lightLink;
+        console.log(color)
+      }
+    }
+</script>
+>>>>>>> design2Saib

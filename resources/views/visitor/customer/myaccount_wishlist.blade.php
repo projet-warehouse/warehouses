@@ -1,6 +1,7 @@
 @extends('layout/app')
 
 @section('content')
+
 <!-- Breadcrumbs -->
 <div class="breadcrumbs">
     <div class="container">
@@ -10,7 +11,7 @@
                     <ul class="bread-list">
                         <li><a href="/">Acceuil<i class="ti-arrow-right"></i></a></li>
                         <li><a href="/myaccount">Mon compte</a><i class="ti-arrow-right"></i></li>
-                        <li class="active"><a href="/myaccount/order/close">Commandes terminées</a></li>
+                        <li class="active"><a href="/myaccount/wishlist">Liste d'envies</a></li>
                     </ul>
                 </div>
             </div>
