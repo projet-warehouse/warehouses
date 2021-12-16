@@ -1,0 +1,108 @@
+section.account {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    /* background-color: #e5e5e5; */
+}
+
+.account__menu,
+.account__card {
+    border: 1px solid transparent;
+    background: #fff;
+    border-radius: 0.1rem;
+    height: 30em;
+    box-shadow: 0px 2px 4px rgba(136, 136, 136, 0.2),
+        0px 3px 6px rgba(136, 136, 136, 0.2);
+}
+
+.account__card {
+    width: 70em;
+}
+
+.account__menu--list > *:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.account__menu--list {
+    padding: 1.5rem;
+}
+
+.account__menu--link:hover,
+.account__menu--link:focus {
+    cursor: pointer;
+}
+
+.account__menu--item i {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    padding-right: 0.8rem;
+}
+
+.account__card--header {
+    border-bottom: 1px solid #e5e5e5;
+}
+.account__card--title {
+    margin: 0;
+    padding: 1rem;
+}
+
+.account__card--body {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(30em, 1fr));
+    grid-auto-rows: max-content;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.account__card--item,
+.account__card--item2 {
+    border: 1px solid #e5e5e5;
+    border-radius: 0.3rem;
+}
+
+.account__card--item {
+    grid-column: 1;
+    grid-row: 1;
+}
+.account__card--item2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.card__item--header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.card__item--header {
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.card__item--body {
+    padding: 1rem;
+}
+
+.card__item--body .mtdp {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.card__item--header {
+    position: relative;
+}
+
+.card__item--header i {
+    position: absolute;
+    right: 0.6rem;
+    font-size: 1.2rem;
+}
+
+.orderStatus {
+    width: 180px !important;
+    text-align: center;
+    color: #fff;
+}

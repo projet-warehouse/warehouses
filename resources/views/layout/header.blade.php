@@ -14,6 +14,9 @@
 	<!-- Web Font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 	
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
 	<!-- StyleSheet -->
 	
 	<!-- Bootstrap -->
@@ -35,8 +38,12 @@
 	<!-- Owl Carousel -->
     <link rel="stylesheet" href="{{asset('css/owl-carousel.css')}}">
 	<!-- Slicknav -->
-    <link rel="stylesheet" href="{{asset('css/slicknav.min.css')}}">
-	
+    
+
+	<!-- customs css -->
+	<link rel="stylesheet" href="{{asset('css/styles.css')}}">
+
+
 	<!-- Eshop StyleSheet -->
 	<link rel="stylesheet" href="{{asset('css/reset.css')}}">
 	<link rel="stylesheet" href="{{asset('css/style.css')}}">
@@ -114,7 +121,7 @@
 							<ul class="list-main">
 								{{-- <li><i class="ti-location-pin"></i> Store location</li>
 								<li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li> --}}
-								<li><i class="ti-user"></i> <a href="/">My account</a></li>
+								<li><i class="ti-user"></i> <a href="/myaccount">My account</a></li>
 								<li><i class="ti-power-off"></i><a href="/login">Login</a></li>
 							</ul>
 						</div>
@@ -130,12 +137,12 @@
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+							<a href="index.html"><img src="{{asset('images/logo.png')}}" alt="logo"></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->
 						<div class="search-top">
-							<div class="top-search"><a href="#0"><i class="ti-search"></i></a></div>
+							<div class="top-search"><a href="#"><i class="ti-search"></i></a></div>
 							<!-- Search Form -->
 							<div class="search-top">
 								<form class="search-form">
