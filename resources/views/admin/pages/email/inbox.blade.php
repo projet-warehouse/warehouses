@@ -1,3 +1,4 @@
+			<div class="page-content">
 
 @extends('admin.partials.panel')
 
@@ -5,7 +6,6 @@
 
 <div class="main-wrapper">
 
-  @include('admin/partials/themes')
 
   @include('admin/partials/sidebar')
 
@@ -350,6 +350,7 @@
         </div>
 
 			</div>
+			</div>
 
       @include('admin/partials/footer')
-@endsection
+@endsectio

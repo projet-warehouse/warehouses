@@ -1,54 +1,94 @@
 <?php
 
+use Facade\Ignition\Exceptions\ViewException;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
+//Page d'accueil
 Route::get('/', function () {
     return view('visitor/index');
 })->name('home');
 
-Route::get('/about', function () {
-    return view('visitor/about-us');
-})->name('about');
+//Page d'inscription
+Route::get('/register', function () {
+    return view('visitor/register');
+})->name('register');
 
-Route::get('/blog', function () {
-    return view('visitor/blog');
-})->name('blog');
+//Page de connexion
+Route::get('/login', function () {
+    return view('visitor/login');
+})->name('login');
 
-Route::get('/blog-article', function () {
-    return view('visitor/blog-article');
-})->name('blogArticle');
+
+//user parametre
+Route::middleware(['auth:sanctum' , 'verified'])->group(function(){
+    Route::get('/myaccount', function () {
+        return view('visitor/myaccount');
+    })->name('myaccount');
+
+    Route::get('/checkout', function () {
+        return view('visitor/checkout');
+    })->name('checkout');
+
+});
+
+
+
+
+//admin parametre
+
+
+route::get('redirects' , 'HomeController@index' );
+
+Route::middleware(['auth:sanctum' ])->group(function(){
+
+    route::get('/dashboard', function(){
+        return view('admin.dashboard');
+    })->name('dashboard');
+
+    Route::get('/compose', function () {
+        return view('admin/pages/email/compose');
+        })->name('composeMail');
+
+    Route::get('/inbox', function () {
+            return view('admin/pages/email/inbox');
+        })->name('inboxMail');
+
+        Route::get('/read', function () {
+            return view('admin/pages/email/read');
+        })->name('readMail');
+
+
+});
+
+
+
+
 
 Route::get('/cart', function () {
     return view('visitor/cart');
 })->name('cart');
 
-Route::get('/checkout', function () {
-    return view('visitor/checkout');
-})->name('checkout');
-
 Route::get('/contact', function () {
     return view('visitor/contact');
 })->name('contact');
 
+Route::get('/about', function () {
+    return view('visitor/about-us');
+})->name('about');
+
 Route::get('/myaccount', function () {
-    return view('visitor/myaccount');
-})->name('myaccount');
+    return view('visitor/customer/index_myaccount');
+})->name('myaccountIndex');
 
+Route::get('/myaccount/order/index', function () {
+    return view('visitor/customer/order_index_myaccount');
+})->name('myaccountorder');
 
-Route::get('/login', function () {
-    return view('visitor/login');
-})->name('login');
+Route::get('/myaccount/order/close', function () {
+    return view('visitor/customer/order_close_myaccount');
+})->name('myaccountorderClose');
+
 
 Route::get('/mail-success', function () {
     return view('visitor/mail-success');
@@ -58,9 +98,7 @@ Route::get('/notfound', function () {
     return view('visitor/notfound');
 })->name('notfound');
 
-Route::get('/register', function () {
-    return view('visitor/register');
-})->name('register');
+
 
 Route::get('/products-grid', function () {
     return view('visitor/products-grid');
@@ -73,6 +111,17 @@ Route::get('/products-list', function () {
 Route::get('/product', function () {
     return view('visitor/product');
 })->name('productDetails');
+
+
+
+
+//Dashboard panel
+/* Route::middleware(['auth:sanctum', 'verified', 'AuthAdmin'])->get('/dashboard', function () {
+    return view('admin/dashboard');
+})->name('lightDashboard'); */
+
+
+
 
 Route::get('/dashboard', function () {
     return view('admin/dashboard');
