@@ -125,7 +125,14 @@
                                     {{-- <li><i class="ti-location-pin"></i> Store location</li>
                                     <li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li> --}}
                                     <li><i class="ti-user"></i> <a href="/home">Voir ma Boutique</a></li>
-                                    <li><i class="ti-power-off"></i><a href="{{ route('logout') }}">Login</a></li>
+                                    <li>
+                                        <form method="POST" action="{{ route('logout') }}">
+                                            @csrf
+                                            <button>
+                                                {{ __('Logout') }}
+                                            </button>
+                                        </form>
+                                    </li>
                                 </ul>
                                 @else
 
@@ -134,9 +141,10 @@
                                     <li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li> --}}
                                     <li><i class="ti-power-off"></i><a href="{{ route('login') }}">Login</a></li>
                                     @if (Route::has('register'))
-                                    <li><i class="ti-user"></i> <a href="{{ route('register')}}">Voir ma Boutique</a></li>
+                                    <li><i class="ti-user"></i> <a href="{{ route('register')}}">{{_('Register')}}</a></li>
                                     @endif
                                 </ul>
+                                @endif
                             </div>
                             <!-- End Top Right -->
                         @endif

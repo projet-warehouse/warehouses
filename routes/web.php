@@ -74,13 +74,11 @@ Route::get('/product', function () {
     return view('visitor/product');
 })->name('productDetails');
 
-<<<<<<< HEAD
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
 Route::get('redirects', 'App\Http\Controllers\HomeController@index');
-=======
 Route::get('/dashboard', function () {
     return view('admin/dashboard');
 })->name('lightDashboard');
@@ -120,4 +118,3 @@ Route::get('/admin_login', function () {
 Route::get('/admin_register', function () {
     return view('admin/pages/auth/register');
 })->name('adminregister');
->>>>>>> 2f2856bed63c210e89f044731e675afe2998f6fc
