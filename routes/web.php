@@ -124,7 +124,7 @@ Route::get('/product', function () {
     return view('visitor/product');
 })->name('productDetails');
 
-<<<<<<< HEAD
+
 
 
 
@@ -135,9 +135,9 @@ Route::get('/product', function () {
 
 
 
-=======
+
 // Admin Routes
->>>>>>> design2Saib
+
 
 Route::get('/dashboard', function () {
     return view('admin/dashboard');
