@@ -20,15 +20,13 @@
 	<link rel="stylesheet" href="{{asset('admin_assets/fonts/feather-font/css/iconfont.css')}}">
 	<link rel="stylesheet" href="{{asset('admin_assets/vendors/flag-icon-css/css/flag-icon.min.css')}}">
 	<!-- endinject -->
-<<<<<<< HEAD
+
 
   <div id="themeColor">
     {{-- <link rel='stylesheet' href='{{asset('admin_assets/css/demo_1/style.css')}}' id='themeColor'> --}}
 
   </div>
 
-=======
->>>>>>> design2Saib
   <link rel="shortcut icon" href="{{asset('admin_assets/images/favicon.png')}}" />
 </head>
 <body>
@@ -59,11 +57,9 @@
               <span class="link-title">Dashboard</span>
             </a>
           </li>
-<<<<<<< HEAD
           <li class="nav-item nav-category">web apps</li>
 
-          {{-- <li class="nav-item nav-category">web apps</li> --}}
-=======
+          {{-- <li class="nav-item nav-category">web apps</li> --}
 
           <li class="nav-item">
             <a href="/newcontroller" class="nav-link">
@@ -80,12 +76,27 @@
           </li>
 
           <li class="nav-item">
+
+            <a href="/newcontroller" class="nav-link">
+              <i class="link-icon" data-feather="users"></i>
+              <span class="link-title">Ajouter Utilisateur</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/editcontroller" class="nav-link">
+              <i class="link-icon" data-feather="edit"></i>
+              <span class="link-title">Editer Utilisateur</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+
             <a href="/addcategory" class="nav-link">
               <i class="link-icon" data-feather="gift"></i>
               <span class="link-title">Ajouter une catégorie</span>
             </a>
           </li>
->>>>>>> design2Saib
 
           <li class="nav-item">
             <a href="/addproduct" class="nav-link">
@@ -126,22 +137,24 @@
                 </li>
               </ul>
             </div>
-<<<<<<< HEAD
+
           </li>
            <li class="nav-item">
             <a href="pages/apps/calendar.html" class="nav-link">
 
-=======
+
           </li> --}}
            {{-- <li class="nav-item">
->>>>>>> design2Saib
+
+          </li> --}}
+           {{-- <li class="nav-item">
             <a href="/calendar" class="nav-link">
 
               <i class="link-icon" data-feather="calendar"></i>
               <span class="link-title">Calendar</span>
             </a>
           </li> --}}
-          
+
           <li class="nav-item">
           {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#forms" role="button" aria-expanded="false" aria-controls="forms">
@@ -176,7 +189,6 @@
                 <span class="link-title">Table</span>
               </a>
             </a>
-<<<<<<< HEAD
             <div class="collapse" id="tables">
               <ul class="nav sub-menu">
                 {{-- <li class="nav-item">
@@ -188,17 +200,16 @@
               </ul>
             </div>
           </li>
-         
+
           <li class="nav-item nav-category">Pages</li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#general-pages" role="button" aria-expanded="false" aria-controls="general-pages">
               <i class="link-icon" data-feather="book"></i>
               <span class="link-title">Invoice</span>
           </li>
-=======
+
+          </li>
           </li> --}}
->>>>>>> design2Saib
-         
           {{-- <li class="nav-item nav-category">Pages</li> --}}
           {{-- <li class="nav-item">
             <a href="/invoice" class="nav-link">
@@ -206,7 +217,7 @@
               <span class="link-title">Invoice</span>
             </a>
         </li> --}}
-              
+
           {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#authPages" role="button" aria-expanded="false" aria-controls="authPages">
               <i class="link-icon" data-feather="unlock"></i>
@@ -227,7 +238,6 @@
                 </li>
               </ul>
             </div>
-<<<<<<< HEAD
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#errorPages" role="button" aria-expanded="false" aria-controls="errorPages">
@@ -236,14 +246,15 @@
               <i class="link-arrow" data-feather="chevron-down"></i>
             </a>
     </nav>
-=======
+
+
           </li> --}}
->>>>>>> design2Saib
+          </li> --}}
     </nav>
   </div>
-    
+
       @yield('content')
-		
+
 		</div>
 	</div>
 	<!-- core:js -->
@@ -276,4 +287,4 @@
   <script src="{{asset('admin_assets/js/dashboard.js')}}"></script>
 	<!-- end custom js for this page -->
 </body>
-</html>    
+</html>

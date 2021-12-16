@@ -101,6 +101,9 @@ Route::get('/myaccount/wishlist', function () {
     return view('visitor/customer/myaccount_wishlist');
 })->name('customerWishlist');
 
+Route::get('/login', function () {
+    return view('auth/login');
+})->name('login');
 
 Route::get('/mail-success', function () {
     return view('visitor/mail-success');
@@ -110,6 +113,9 @@ Route::get('/notfound', function () {
     return view('visitor/notfound');
 })->name('notfound');
 
+Route::get('/register', function () {
+    return view('auth/register');
+})->name('register');
 
 
 Route::get('/products-grid', function () {
@@ -121,10 +127,14 @@ Route::get('/products-list', function () {
 })->name('productsInList');
 
 Route::get('/product', function () {
-    return view('visitor/product');
+    return view('visitor/p
+roduct');
 })->name('productDetails');
 
-
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function(){
+    return view('dashboard');
+})->name('dashboard');
+Route::get('redirects', 'App\Http\Controllers\HomeController@index');
 
 
 

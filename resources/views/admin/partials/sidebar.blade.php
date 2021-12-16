@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <nav class="sidebar">
       <div class="sidebar-header">
         <a href="#" class="sidebar-brand">
@@ -23,20 +23,15 @@
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
               <i class="link-icon" data-feather="mail"></i>
-              <span class="link-title">Email</span>
+              <span class="link-title">Categorie</span>
               <i class="link-arrow" data-feather="chevron-down"></i>
             </a>
             <div class="collapse" id="emails">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="pages/email/inbox.html" class="nav-link">Inbox</a>
+                  <a href="" class="nav-link">Ajout de catégorie</a>
                 </li>
-                <li class="nav-item">
-                  <a href="pages/email/read.html" class="nav-link">Read</a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages/email/compose.html" class="nav-link">Compose</a>
-                </li>
+
               </ul>
             </div>
           </li>
@@ -311,10 +306,10 @@
       </div>
     </nav>
     @include('admin/partials/themes')
-=======
+
 <link rel='stylesheet' href='{{asset('admin_assets/css/demo_1/style.css')}}' id='themeColor'>
 
->>>>>>> design2Saib
+<link rel='stylesheet' href='{{asset('admin_assets/css/demo_1/style.css')}}' id='themeColor'>
 <nav class="settings-sidebar">
   <div class="sidebar-body">
     <a href="#" class="settings-sidebar-toggler">
@@ -349,7 +344,7 @@
 </nav>
 
 <script>
-<<<<<<< HEAD
+
    var theme = document.getElementById(themeColor);
    var darkLink = "{{asset('admin_assets/css/demo_2/style.css')}}";
   function themes(){
@@ -357,7 +352,7 @@
   }
   // themes();
 </script>
-=======
+<script>
   var theme = document.getElementById('themeColor');
     var darkLink = "{{asset('admin_assets/css/demo_2/style.css')}}";
     var lightLink = "{{asset('admin_assets/css/demo_1/style.css')}}";
@@ -373,4 +368,3 @@
       }
     }
 </script>
->>>>>>> design2Saib
