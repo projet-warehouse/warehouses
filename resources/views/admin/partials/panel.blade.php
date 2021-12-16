@@ -45,8 +45,14 @@
               <span class="link-title">Dashboard</span>
             </a>
           </li>
-          {{-- <li class="nav-item nav-category">web apps</li> --}}
+
           <li class="nav-item">
+            <a href="/newcontroller" class="nav-link">
+              <i class="link-icon" data-feather="users"></i>
+              <span class="link-title">Ajouter Utilisateur</span>
+            </a>
+          </li>
+          {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
               <i class="link-icon" data-feather="mail"></i>
               <span class="link-title">Email</span>
@@ -65,13 +71,13 @@
                 </li>
               </ul>
             </div>
-          </li>
-           <li class="nav-item">
+          </li> --}}
+           {{-- <li class="nav-item">
             <a href="/calendar" class="nav-link">
               <i class="link-icon" data-feather="calendar"></i>
               <span class="link-title">Calendar</span>
             </a>
-          </li>
+          </li> --}}
           
           {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#forms" role="button" aria-expanded="false" aria-controls="forms">
@@ -96,24 +102,23 @@
               </ul>
             </div>
           </li> --}}
-          <li class="nav-item">
+          {{-- <li class="nav-item">
               <a href="/table" class="nav-link">
                 <i class="link-icon" data-feather="layout"></i>
                 <span class="link-title">Table</span>
               </a>
             </a>
-          </li>
+          </li> --}}
          
           {{-- <li class="nav-item nav-category">Pages</li> --}}
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a href="/invoice" class="nav-link">
               <i class="link-icon" data-feather="book"></i>
               <span class="link-title">Invoice</span>
             </a>
-          </a>
-        </li>
+        </li> --}}
               
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#authPages" role="button" aria-expanded="false" aria-controls="authPages">
               <i class="link-icon" data-feather="unlock"></i>
               <span class="link-title">Authentication</span>
@@ -129,7 +134,7 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </li> --}}
     </nav>
   </div>
     
