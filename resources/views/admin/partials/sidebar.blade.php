@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <nav class="sidebar">
       <div class="sidebar-header">
         <a href="#" class="sidebar-brand">
@@ -306,10 +306,10 @@
       </div>
     </nav>
     @include('admin/partials/themes')
-=======
+
 <link rel='stylesheet' href='{{asset('admin_assets/css/demo_1/style.css')}}' id='themeColor'>
 
->>>>>>> design2Saib
+
 <nav class="settings-sidebar">
   <div class="sidebar-body">
     <a href="#" class="settings-sidebar-toggler">
@@ -344,7 +344,7 @@
 </nav>
 
 <script>
-<<<<<<< HEAD
+
    var theme = document.getElementById(themeColor);
    var darkLink = "{{asset('admin_assets/css/demo_2/style.css')}}";
   function themes(){
@@ -352,7 +352,7 @@
   }
   // themes();
 </script>
-=======
+<script>
   var theme = document.getElementById('themeColor');
     var darkLink = "{{asset('admin_assets/css/demo_2/style.css')}}";
     var lightLink = "{{asset('admin_assets/css/demo_1/style.css')}}";
@@ -368,4 +368,4 @@
       }
     }
 </script>
->>>>>>> design2Saib
+
