@@ -35,10 +35,10 @@ Route::middleware(['auth:sanctum' , 'verified'])->group(function(){
 
 
 
-//admin parametre
+//admin parametre 
 
 
-route::get('redirects' , '\App\http\controllers\HomeController@index' );
+route::get('redirects' , 'HomeController@index' );
 
 Route::middleware(['auth:sanctum' ])->group(function(){
 
