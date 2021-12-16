@@ -1,7 +1,6 @@
 @extends('layout/app')
 
 @section('content')
-
 <!-- Breadcrumbs -->
 <div class="breadcrumbs">
     <div class="container">
