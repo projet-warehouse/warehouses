@@ -45,7 +45,7 @@
 									<div class="col-12">
 										<div class="form-group login-btn">
 											<button class="btn" type="submit">Se connecter</button>
-											<a href="/register" class="btn">S'enregister</a>
+											<a href="/register" class="btn">CRÉER VOTRE COMPTE</a>
 										</div>
 										<div class="checkbox">
 											<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">Se souvenir de moi</label>

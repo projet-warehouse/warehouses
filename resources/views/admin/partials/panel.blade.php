@@ -19,7 +19,6 @@
 	<link rel="stylesheet" href="{{asset('admin_assets/fonts/feather-font/css/iconfont.css')}}">
 	<link rel="stylesheet" href="{{asset('admin_assets/vendors/flag-icon-css/css/flag-icon.min.css')}}">
 	<!-- endinject -->
-  <link rel="stylesheet" href="{{asset('admin_assets/css/demo_1/style.css')}}">
   <link rel="shortcut icon" href="{{asset('admin_assets/images/favicon.png')}}" />
 </head>
 <body>
@@ -28,7 +27,7 @@
 		<!-- partial:partials/_sidebar.html -->
 		<nav class="sidebar">
       <div class="sidebar-header">
-        <a href="#" class="sidebar-brand">
+        <a href="" class="sidebar-brand">
           Noble<span>UI</span>
         </a>
         <div class="sidebar-toggler not-active">
@@ -42,12 +41,32 @@
           {{-- <li class="nav-item nav-category">Main</li> --}}
           <li class="nav-item">
             <a href="/dashboard" class="nav-link">
-              <i class="link-icon" data-feather="box"></i>
+              <i class="link-icon" data-feather="book"></i>
               <span class="link-title">Dashboard</span>
             </a>
           </li>
-          {{-- <li class="nav-item nav-category">web apps</li> --}}
+
           <li class="nav-item">
+            <a href="/newcontroller" class="nav-link">
+              <i class="link-icon" data-feather="users"></i>
+              <span class="link-title">Ajouter Utilisateur</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/editcontroller" class="nav-link">
+              <i class="link-icon" data-feather="edit"></i>
+              <span class="link-title">Editer Utilisateur</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/addcategory" class="nav-link">
+              <i class="link-icon" data-feather="gift"></i>
+              <span class="link-title">Ajouter une catégorie</span>
+            </a>
+          </li>
+          {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
               <i class="link-icon" data-feather="mail"></i>
               <span class="link-title">Email</span>
@@ -66,13 +85,13 @@
                 </li>
               </ul>
             </div>
-          </li>
-           <li class="nav-item">
+          </li> --}}
+           {{-- <li class="nav-item">
             <a href="/calendar" class="nav-link">
               <i class="link-icon" data-feather="calendar"></i>
               <span class="link-title">Calendar</span>
             </a>
-          </li>
+          </li> --}}
           
           {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#forms" role="button" aria-expanded="false" aria-controls="forms">
@@ -97,24 +116,23 @@
               </ul>
             </div>
           </li> --}}
-          <li class="nav-item">
+          {{-- <li class="nav-item">
               <a href="/table" class="nav-link">
                 <i class="link-icon" data-feather="layout"></i>
                 <span class="link-title">Table</span>
               </a>
             </a>
-          </li>
+          </li> --}}
          
           {{-- <li class="nav-item nav-category">Pages</li> --}}
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a href="/invoice" class="nav-link">
               <i class="link-icon" data-feather="book"></i>
               <span class="link-title">Invoice</span>
             </a>
-          </a>
-        </li>
+        </li> --}}
               
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#authPages" role="button" aria-expanded="false" aria-controls="authPages">
               <i class="link-icon" data-feather="unlock"></i>
               <span class="link-title">Authentication</span>
@@ -130,7 +148,7 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </li> --}}
     </nav>
   </div>
     
@@ -138,7 +156,6 @@
 		
 		</div>
 	</div>
-
 	<!-- core:js -->
 	<script src="{{asset('admin_assets/vendors/core/core.js')}}"></script>
 	<!-- endinject -->
@@ -153,7 +170,7 @@
   <script src="{{asset('admin_assets/vendors/simplemde/simplemde.min.js')}}"></script>
   <script src="{{asset('admin_assets/vendors/moment/moment.min.js')}}"></script>
   <script src="{{asset('admin_assets/vendors/fullcalendar/main.min.js')}}"></script>
-  <script src="{{asset('admin_assets/vendors/jquery-ui/jquery-ui.min.js')}}"></script>
+  {{-- <script src="{{asset('admin_assets/vendors/jquery-ui/jquery-ui.min.js')}}"></script> --}}
   <script src="{{asset('admin_assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js')}}"></script>
   <script src="{{asset('admin_assets/vendors/datatables.net/jquery.dataTables.js')}}"></script>
 	<!-- end plugin js for this page -->

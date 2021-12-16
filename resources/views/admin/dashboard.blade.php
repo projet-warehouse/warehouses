@@ -6,7 +6,7 @@
 
 <div class="main-wrapper">
 
-  @include('admin/partials/themes')
+  {{-- @include('admin/partials/themes') --}}
 
   @include('admin/partials/sidebar')
 

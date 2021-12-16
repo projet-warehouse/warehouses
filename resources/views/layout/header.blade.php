@@ -159,12 +159,12 @@
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+							<a href="index.html"><img src="{{asset('images/logo.png')}}" alt="logo"></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->
 						<div class="search-top">
-							<div class="top-search"><a href="#0"><i class="ti-search"></i></a></div>
+							<div class="top-search"><a href="#"><i class="ti-search"></i></a></div>
 							<!-- Search Form -->
 							<div class="search-top">
 								<form class="search-form">
