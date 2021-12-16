@@ -42,8 +42,13 @@ return [
     */
 
     'features' => [
+<<<<<<< HEAD
         // Features::termsAndPrivacyPolicy(),
         Features::profilePhotos(),
+=======
+         Features::termsAndPrivacyPolicy(),
+         Features::profilePhotos(),
+>>>>>>> rod90
         // Features::api(),
         // Features::teams(['invitations' => true]),
         Features::accountDeletion(),

@@ -2,17 +2,7 @@
 
 @section('content')
 
-<style>
-.concurrent-order{
-    color:#f7941d !important;
-    border-color: #f7941d !important;
-}
-.orderStatus{
-    width: 180px !important;
-    text-align: center;
-    color: #fff;
-}
-</style>
+
 <!-- Breadcrumbs -->
 <div class="breadcrumbs">
     <div class="container">
@@ -21,7 +11,8 @@
                 <div class="bread-inner">
                     <ul class="bread-list">
                         <li><a href="/">Acceuil<i class="ti-arrow-right"></i></a></li>
-                        <li class="active"><a href="/login">Mon compte</a></li>
+                        <li><a href="/myaccount">Mon compte<i class="ti-arrow-right"></i></a></li
+                          <li class="active"><a href="/myaccount/inbox">Commandes en cours</a></li>
                     </ul>
                 </div>
             </div>

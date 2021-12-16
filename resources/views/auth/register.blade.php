@@ -1,61 +1,128 @@
-<x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            
-        </x-slot>
+@extends('layout/app')
 
-        <x-jet-validation-errors class="mb-4" />
+@section('content')
 
-        <form method="POST" action="{{ route('register') }}">
-            @csrf
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="bread-inner">
+							<ul class="bread-list">
+								<li><a href="index1.html">Accueil<i class="ti-arrow-right"></i></a></li>
+								<li class="active"><a href="blog-single.html">S'enregistrer</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Breadcrumbs -->
 
-            <div>
-                <x-jet-label for="name" value="{{ __('Name') }}" />
-                <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            </div>
+		<!-- Shop Login -->
+		<section class="shop login section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 offset-lg-3 col-12">
+						<div class="login-form">
+							<h2>S'enregister</h2>
+							<p>Veuillez vous inscrire afin de pouvoir valider votre commande</p>
+							<!-- Form -->
+							<form class="form" method="post" name="myForm" onsubmit="return validateForm()" action="{{ route('register') }}">
+                                @csrf
+								<div class="row">
+									<div class="col-12">
+										<div class="form-group">
+											<label for="name" value="{{ __('Name') }}">Nom et prénoms<span>*</span></label>
+											<input id="name" type="text" name="name" :value="old('name')" required autofocus autocomplete="name">
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group">
+											<label for="email" value="{{ __('Email') }}">Email<span>*</span></label>
+											<input id="email" type="email" name="email" :value="old('email')" required>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group">
+											<label for="phone" value="{{ __('phone') }}">Numéro de Téléphone<span>*</span></label>
+											<input id="phone" type="tel" name="phone" :value="old('phone')" required>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group">
+											<label for="password" value="{{ __('Password') }}">Mot de Passe<span>*</span></label>
+											<input id="password" type="password" name="password" required autocomplete="new-password">
+                                            <strong class="error" id="errormdp"></strong>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group">
+											<label for="password_confirmation" value="{{ __('Confirm Password') }}">Confirmer votre Mot de Passe<span>*</span></label>
+											<input id="password_confirmation" type="password" name="password_confirmation" required autocomplete="new-password">
+                                            <strong class="error" id="errormdp"></strong>
+										</div>
+									</div>
+                                    @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
+                                        <div class="col-12">
+                                            <label for="terms">
+                                                <div class="form-group">
+                                                    <input name="terms" id="terms" type="checkbox"/>
 
-            <div class="mt-4">
-                <x-jet-label for="email" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
-            </div>
-            
+                                                    <div class="">
+                                                        {!! __('I agree to the :terms_of_service and :privacy_policy', [
+                                                                'terms_of_service' => '<a target="_blank" href="'.route('terms.show').'" class="underline text-sm text-gray-600 hover:text-gray-900">'.__('Terms of Service').'</a>',
+                                                                'privacy_policy' => '<a target="_blank" href="'.route('policy.show').'" class="underline text-sm text-gray-600 hover:text-gray-900">'.__('Privacy Policy').'</a>',
+                                                        ]) !!}
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    @endif
+									<div class="col-12">
+										<div class="form-group login-btn">
+											<button class="btn" type="submit">{{ __('Register') }}</button>
+											<a href="{{ route('login')}}" class="btn">{{ __('Already registered?') }}</a>
+										</div>
+										<div class="checkbox">
+											<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">S'inscrire au Newsletter</label>
+										</div>
+									</div>
+								</div>
+							</form>
+							<!--/ End Form -->
+                            <script>
+                                function validateForm()
+                                {
+                                    var password = document.forms["myForm"]["password"];
+                                    var password_confirmation = document.forms["myForm"]["password_confirmation"];
 
-            <div class="mt-4">
-                <x-jet-label for="password" value="{{ __('Password') }}" />
-                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
-            </div>
+                                    if (password.value ==! password_confirmation.value){
+                                        document.getElementById('errormdp').innerHTML="les mots de passe ne sont pas identiques";
+                                        password_confirmation.focus();
+                                        return false;
+                                    }else{
+                                        document.getElementById('errormdp').innerHTML="";
+                                    }
+                                }
+                             </script>
+                             <style>
+                                .error{
+                                   color: #D8000C;
+                                   background-color: #FFBABA;
+                                }
+                             </style>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Login -->
 
-            <div class="mt-4">
-                <x-jet-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
-                <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
-            </div>
+	<!--debut footer-->
 
-            @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
-                <div class="mt-4">
-                    <x-jet-label for="terms">
-                        <div class="flex items-center">
-                            <x-jet-checkbox name="terms" id="terms"/>
+	@include('layout/footer')
 
-                            <div class="ml-2">
-                                {!! __("J'accepte les :terms_of_service et :privacy_policy", [
-                                        "conditions d'utilisation" => '<a target="_blank" href="'.route('terms.show').'" class="underline text-sm text-gray-600 hover:text-gray-900">'.__("Conditions d'utilisation").'</a>',
-                                        'politique de confidentialité' => '<a target="_blank" href="'.route('policy.show').'" class="underline text-sm text-gray-600 hover:text-gray-900">'.__("Politique de confidentialité").'</a>',
-                                ]) !!}
-                            </div>
-                        </div>
-                    </x-jet-label>
-                </div>
-            @endif
+    <!--fin footer-->
 
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Déjà enregistré?') }}
-                </a>
-
-                <x-jet-button class="ml-4">
-                    {{ __("S'inscrire") }}
-                </x-jet-button>
-            </div>
-        </form>
-    </x-jet-authentication-card>
-</x-guest-layout>
+@endsection

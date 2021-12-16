@@ -21,7 +21,7 @@ Route::get('/login', function () {
 
 
 //user parametre
-Route::middleware(['auth:sanctum' , 'verified'])->group(function(){
+/*Route::middleware(['auth:sanctum' , 'verified'])->group(function(){
     Route::get('/myaccount', function () {
         return view('visitor/myaccount');
     })->name('myaccount');
@@ -30,7 +30,7 @@ Route::middleware(['auth:sanctum' , 'verified'])->group(function(){
         return view('visitor/checkout');
     })->name('checkout');
 
-});
+});*/
 
 
 
@@ -38,12 +38,12 @@ Route::middleware(['auth:sanctum' , 'verified'])->group(function(){
 //admin parametre
 
 
-route::get('redirects' , 'HomeController@index' );
+//route::get('redirects' , 'HomeController@index' );
 
-Route::middleware(['auth:sanctum' ])->group(function(){
+//Route::middleware(['auth:sanctum' ])->group(function(){
 
-    route::get('/dashboard', function(){
-        return view('admin.dashboard');
+    //route::get('/dashboard', function(){
+        /*return view('admin.dashboard');
     })->name('dashboard');
 
     Route::get('/compose', function () {
@@ -59,7 +59,7 @@ Route::middleware(['auth:sanctum' ])->group(function(){
         })->name('readMail');
 
 
-});
+});*/
 
 
 
@@ -79,15 +79,27 @@ Route::get('/about', function () {
 
 Route::get('/myaccount', function () {
     return view('visitor/customer/index_myaccount');
-})->name('myaccountIndex');
+})->name('customerIndex');
 
 Route::get('/myaccount/order/index', function () {
     return view('visitor/customer/order_index_myaccount');
-})->name('myaccountorder');
+})->name('customerOrder');
 
 Route::get('/myaccount/order/close', function () {
     return view('visitor/customer/order_close_myaccount');
-})->name('myaccountorderClose');
+})->name('customerOrderClose');
+
+Route::get('/myaccount/inbox', function () {
+    return view('visitor/customer/myaccount_inbox');
+})->name('customerInbox');
+
+Route::get('/myaccount/opinion', function () {
+    return view('visitor/customer/index_opinion');
+})->name('customerOpinion');
+
+Route::get('/myaccount/wishlist', function () {
+    return view('visitor/customer/myaccount_wishlist');
+})->name('customerWishlist');
 
 
 Route::get('/mail-success', function () {
@@ -97,7 +109,6 @@ Route::get('/mail-success', function () {
 Route::get('/notfound', function () {
     return view('visitor/notfound');
 })->name('notfound');
-
 
 
 Route::get('/products-grid', function () {
@@ -127,38 +138,54 @@ Route::get('/dashboard', function () {
     return view('admin/dashboard');
 })->name('lightDashboard');
 
-Route::get('/dashboard2', function () {
-    return view('admin/dashboard2');
-})->name('darkDashboard');
+Route::get('/newcontroller', function () {
+    return view('admin/pages/newcontroller');
+})->name('newcontroller');
 
-Route::get('/compose', function () {
-    return view('admin/pages/email/compose');
-})->name('composeMail');
+Route::get('/editcontroller', function () {
+    return view('admin/pages/editcontroller');
+})->name('editcontroller');
 
-Route::get('/inbox', function () {
-    return view('admin/pages/email/inbox');
-})->name('inboxMail');
+Route::get('/addcategory', function () {
+    return view('admin/pages/addcategory');
+})->name('addcategory');
 
-Route::get('/read', function () {
-    return view('admin/pages/email/read');
-})->name('readMail');
+Route::get('/addproduct', function () {
+    return view('admin/pages/addproduct');
+})->name('addproduct');
 
-Route::get('/calendar', function () {
-    return view('admin/pages/apps/calendar');
-})->name('calendar');
 
-Route::get('/table', function () {
-    return view('admin/pages/tables/table');
-})->name('table');
+// Route::get('/compose', function () {
+//     return view('admin/pages/email/compose');
+// })->name('composeMail');
 
-Route::get('/invoice', function () {
-    return view('admin/pages/general/invoice');
-})->name('invoice');
+// Route::get('/inbox', function () {
+//     return view('admin/pages/email/inbox');
+// })->name('inboxMail');
 
-Route::get('/admin_login', function () {
-    return view('admin/pages/auth/login');
-})->name('adminlogin');
+// Route::get('/read', function () {
+//     return view('admin/pages/email/read');
+// })->name('readMail');
 
+// Route::get('/calendar', function () {
+//     return view('admin/pages/apps/calendar');
+// })->name('calendar');
+
+// Route::get('/table', function () {
+//     return view('admin/pages/tables/table');
+// })->name('table');
+
+// Route::get('/invoice', function () {
+//     return view('admin/pages/general/invoice');
+// })->name('invoice');
+
+// Route::get('/admin_login', function () {
+//     return view('admin/pages/auth/login');
+// })->name('adminlogin');
+
+// Route::get('/admin_register', function () {
+//     return view('admin/pages/auth/register');
+// })->name('adminregister');
 Route::get('/admin_register', function () {
     return view('admin/pages/auth/register');
 })->name('adminregister');

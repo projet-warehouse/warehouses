@@ -134,11 +134,18 @@ return [
     'features' => [
         Features::registration(),
         Features::resetPasswords(),
+<<<<<<< HEAD
         Features::emailVerification(),
         Features::updateProfileInformation(),
         Features::updatePasswords(),
         //Features::twoFactorAuthentication
         ([
+=======
+        // Features::emailVerification(),
+        Features::updateProfileInformation(),
+        Features::updatePasswords(),
+        Features::twoFactorAuthentication([
+>>>>>>> rod90
             'confirmPassword' => true,
         ]),
     ],

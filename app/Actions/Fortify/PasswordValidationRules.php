@@ -14,5 +14,20 @@ trait PasswordValidationRules
     protected function passwordRules()
     {
         return ['required', 'string', new Password, 'confirmed'];
+<<<<<<< HEAD
     }
+=======
+        (new Password)->length(10)
+
+        // Au moins une majuscule
+        (new Password)->requireUppercase()
+
+        // Au moins un chiffre
+        (new Password)->requireNumeric()
+
+        // Au moins un caractère spécial
+        (new Password)->requireSpecialCharacter();
+    }
+
+>>>>>>> rod90
 }

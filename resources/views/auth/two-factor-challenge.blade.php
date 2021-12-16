@@ -1,7 +1,11 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
+<<<<<<< HEAD
             
+=======
+            <x-jet-authentication-card-logo />
+>>>>>>> rod90
         </x-slot>
 
         <div x-data="{ recovery: false }">

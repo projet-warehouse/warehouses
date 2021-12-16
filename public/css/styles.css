@@ -3,14 +3,18 @@ section.account {
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
-    padding: 2rem;
+    padding: 5rem 2rem;
+    /* background-color: #e5e5e5; */
 }
 
 .account__menu,
 .account__card {
-    border: 1px solid #989898;
-    border-radius: 0.3rem;
-    height: 42em;
+    border: 1px solid transparent;
+    background: #fff;
+    border-radius: 0.1rem;
+    height: 24em;
+    box-shadow: 0px 2px 4px rgba(136, 136, 136, 0.2),
+        0px 3px 6px rgba(136, 136, 136, 0.2);
 }
 
 .account__card {
@@ -27,7 +31,6 @@ section.account {
 
 .account__menu--link:hover,
 .account__menu--link:focus {
-    border-bottom: 1px solid black !important;
     cursor: pointer;
 }
 
@@ -39,7 +42,7 @@ section.account {
 }
 
 .account__card--header {
-    border-bottom: 1px solid #989898;
+    border-bottom: 1px solid #e5e5e5;
 }
 .account__card--title {
     margin: 0;
@@ -55,10 +58,8 @@ section.account {
 }
 
 .account__card--item,
-.account__card--item2,
-.account__card--item3,
-.account__card--item4 {
-    border: 1px solid #989898;
+.account__card--item2 {
+    border: 1px solid #e5e5e5;
     border-radius: 0.3rem;
 }
 
@@ -70,17 +71,9 @@ section.account {
     grid-column: 2;
     grid-row: 1;
 }
-.account__card--item3 {
-    grid-column: 1;
-    grid-row: 2;
-}
 
-.account__card--item4 {
-    grid-column: 2;
-    grid-row: 2;
-}
 .card__item--header {
-    border-bottom: 1px solid #989898;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .card__item--header {
@@ -98,24 +91,6 @@ section.account {
     text-transform: uppercase;
 }
 
-.btn__card {
-    position: relative;
-    padding: 1rem 5.5rem;
-    margin-top: 2rem;
-    font-weight: 600;
-    background: transparent;
-    text-transform: uppercase;
-    box-shadow: 0 2px 4px rgba(102, 102, 102, 0.2),
-        0 3px 6px rgba(102, 102, 102, 0.2);
-}
-
-.btn__card i {
-    position: absolute;
-    left: 2rem;
-    top: 0.8rem;
-    font-size: 1.2rem;
-}
-
 .card__item--header {
     position: relative;
 }
@@ -123,4 +98,26 @@ section.account {
 .card__item--header i {
     position: absolute;
     right: 0.6rem;
+    font-size: 1.2rem;
+}
+
+.orderStatus {
+    width: 180px !important;
+    text-align: center;
+    color: #fff;
+}
+
+.text-line-through {
+    text-decoration: line-through !important;
+}
+
+.reduction {
+    background-color: rgba(247, 149, 29, 0.4);
+    border-radius: 0.2rem;
+    padding: 0.1.5rem 0.3rem;
+}
+
+.btn {
+    width: 130px;
+    height: 30px;
 }
