@@ -1,6 +1,7 @@
 @extends('layout/app')
 
 @section('content')
+
 <!-- Breadcrumbs -->
 <div class="breadcrumbs">
     <div class="container">
@@ -10,7 +11,7 @@
                     <ul class="bread-list">
                         <li><a href="/">Acceuil<i class="ti-arrow-right"></i></a></li>
                         <li><a href="/myaccount">Mon compte</a><i class="ti-arrow-right"></i></li>
-                        <li class="active"><a href="/myaccount/order/close">Commandes terminées</a></li>
+                        <li class="active"><a href="/myaccount/opinion">Avis en attente</a></li>
                     </ul>
                 </div>
             </div>
@@ -18,7 +19,6 @@
     </div>
 </div>
 <!-- End Breadcrumbs -->
-
 
 <!-- my account -->
 <section class="account">
@@ -83,11 +83,11 @@
 
 <!-- my account end -->
 
-<!--debut footer-->
-<div class="mt-5">
-    @include('layout/footer')
 
-</div>
+<!--debut footer-->
+
+@include('layout/footer')
+
 <!--fin footer-->
         
 @endsection

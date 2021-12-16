@@ -1,6 +1,8 @@
 @extends('layout/app')
 
 @section('content')
+
+
 <!-- Breadcrumbs -->
 <div class="breadcrumbs">
     <div class="container">
@@ -10,7 +12,7 @@
                     <ul class="bread-list">
                         <li><a href="/">Acceuil<i class="ti-arrow-right"></i></a></li>
                         <li><a href="/myaccount">Mon compte</a><i class="ti-arrow-right"></i></li>
-                        <li class="active"><a href="/myaccount/order/close">Commandes terminées</a></li>
+                        <li class="active"><a href="/myaccount/inbox">Boîte de réception</a></li>
                     </ul>
                 </div>
             </div>
@@ -31,25 +33,24 @@
        </div>
 
        <div class="d-flex justify-content-around text-uppercase my-4 h6">
-        <div><a href="/myaccount/order/index" class="border border-bottom border-left-0 border-top-0 border-right-0 p-2 mb-6">Commandes en cours (03)</a></div>
-        <div><a href="/myaccount/order/close" class="border border-bottom border-left-0 border-top-0 border-right-0 p-2 concurrent-order">Commandes terminées (02)</a></div>
+        <div><a href="/myaccount/order/index" class="border border-bottom border-left-0 border-top-0 border-right-0 p-2 mb-6 concurrent-order">Commandes en cours (03)</a></div>
+        <div><a href="/myaccount/order/close" class="border border-bottom border-left-0 border-top-0 border-right-0 p-2 ">Commandes terminées (02)</a></div>
     </div>
 
         <div class="card mt-3 mb-3 mx-4 p-3 d-flex" style="">
             <div class="row no-gutters">
               <div class="col-md-3">
-                <img src="{{asset('images/reveil.jpg')}}" class="card-img" alt="..." style="max-width:150px">
+                <img src="{{asset('images/iphone.png')}}" class="card-img" alt="..." style="max-width:150px">
               </div>
               <div class="col-md-6">
                 <div class="card-body">
-                  <h5 class="card-title"> Chaud Nouveau Réveil Rétro-éclairage Grand Affichage 
-                    électronique LCD Réveil Numérique--Blanc</h5>
+                  <h5 class="card-title">Apple IPhone 8s - 4G LTE - 8 MP- 1Go RAM- 16Go -Or - Garantysmart 3 Mois</h5>
                   <p class="card-text" style="max-height:200px; overflow:hidden">
-                    Commande N°01
+                      Commande N°02
                     </p>
                 </div>
-                <p class="card-text"><small class="text-dark h6">Le 01 Novembre 2021</small></p>
-                <div class="bg-success px-3 orderStatus" id=""> LIVREE</div>
+                <p class="card-text"><small class="text-dark h6">Le 13 Novembre 2021</small></p>
+                <div class="bg-primary px-3 orderStatus" id=""> EN PRÉPARATION</div>
               </div>
                 <div class="col-md-2 detail align-items-end" style="text-align: end; color:#f7941d;">
                     <a href="" class="p-2">Détails</a>
@@ -64,13 +65,34 @@
               </div>
               <div class="col-md-6">
                 <div class="card-body">
-                  <h5 class="card-title">Moulinex Bouilloire Soleil 1.7L Ivoire BY320A10</h5>
+                  <h5 class="card-title">Hisense SMART TV LED 50’’ UHD – H50A7100F</h5>
                   <p class="card-text" style="max-height:200px; overflow:hidden">
-                    Commande N°04
+                    Commande N°03
                     </p>
                 </div>
-                <p class="card-text"><small class="text-dark h6">Le 15 Décembre 2021</small></p>
-                <div class="bg-secondary px-3 orderStatus" id=""> ANNULEE</div>
+                <p class="card-text"><small class="text-dark h6">Le 07 Novembre 2021</small></p>
+                <div class="bg-primary px-3 orderStatus" id=""> PRÊT POUR LIVRAISON</div>
+              </div>
+                <div class="col-md-2 detail align-items-end" style="text-align: end; color:#f7941d;">
+                    <a href="" class="p-2">Détails</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-3 mb-3 mx-4 p-3 d-flex" style="">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <img src="{{asset('images/home_cinema.jpg')}}" class="card-img" alt="..." style="max-width:150px">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Ilux Home Cinéma 5.1 - LX-882 - 100W - Noir</h5>
+                  <p class="card-text" style="max-height:200px; overflow:hidden">
+                    Commande N°05
+                    </p>
+                </div>
+                <p class="card-text"><small class="text-dark h6">Le 15 Novembre 2021</small></p>
+                <div class="bg-primary px-3 orderStatus" id=""> PRÊT POUR LIVRAISON</div>
               </div>
                 <div class="col-md-2 detail align-items-end" style="text-align: end; color:#f7941d;">
                     <a href="" class="p-2">Détails</a>
