@@ -1,5 +1,6 @@
 
 
+
 @extends('admin.partials.panel')
 
 @section('content')
@@ -9,6 +10,7 @@
   @include('admin/partials/sidebar')
 
   @include('admin/partials/navbar')
+
 
 			<div class="page-content">
 
@@ -95,5 +97,7 @@
 				</div>
 
 			</div>
+
+
 	@include('admin/partials/footer')
 @endsection
