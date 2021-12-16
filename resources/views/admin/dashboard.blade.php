@@ -1,3 +1,4 @@
+
 <link rel="stylesheet" href="{{asset('admin_assets/css/demo_1/style.css')}}">
 
 @include('admin/partials/panel')
@@ -10,6 +11,19 @@
 			<!-- partial -->
       @include('admin/partials/navbar')
 			<!-- partial -->
+{{-- <link rel="stylesheet" href="{{asset('admin_assets/css/demo_1/style.css')}}"> --}}
+
+@extends('admin.partials.panel')
+
+@section('content')
+
+<div class="main-wrapper">
+
+  {{-- @include('admin/partials/themes') --}}
+
+  @include('admin/partials/sidebar')
+
+  @include('admin/partials/navbar')
 
 			<div class="page-content">
 
@@ -436,6 +450,7 @@
 
 			</div>
 
+
 			<!-- partial:partials/_footer.html -->
 			<footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between">
 				<p class="text-muted text-center text-md-left">Copyright © 2021 <a href="https://www.nobleui.com" target="_blank">NobleUI</a>. All rights reserved</p>
@@ -467,3 +482,6 @@
 	<!-- end custom js for this page -->
 </body>
 </html>    
+      @include('admin/partials/footer')
+@endsection
+		
