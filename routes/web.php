@@ -35,7 +35,7 @@ Route::middleware(['auth:sanctum' , 'verified'])->group(function(){
 
 
 
-//admin parametre 
+//admin parametre
 
 
 route::get('redirects' , 'HomeController@index' );
@@ -76,7 +76,7 @@ Route::get('/contact', function () {
 Route::get('/about', function () {
     return view('visitor/about-us');
 })->name('about');
-=======
+
 Route::get('/myaccount', function () {
     return view('visitor/customer/index_myaccount');
 })->name('myaccountIndex');
