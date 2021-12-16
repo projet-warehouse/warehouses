@@ -43,15 +43,27 @@ Route::get('/contact', function () {
 
 Route::get('/myaccount', function () {
     return view('visitor/customer/index_myaccount');
-})->name('myaccountIndex');
+})->name('customerIndex');
 
 Route::get('/myaccount/order/index', function () {
     return view('visitor/customer/order_index_myaccount');
-})->name('myaccountorder');
+})->name('customerOrder');
 
 Route::get('/myaccount/order/close', function () {
     return view('visitor/customer/order_close_myaccount');
-})->name('myaccountorderClose');
+})->name('customerOrderClose');
+
+Route::get('/myaccount/inbox', function () {
+    return view('visitor/customer/myaccount_inbox');
+})->name('customerInbox');
+
+Route::get('/myaccount/opinion', function () {
+    return view('visitor/customer/index_opinion');
+})->name('customerOpinion');
+
+Route::get('/myaccount/wishlist', function () {
+    return view('visitor/customer/myaccount_wishlist');
+})->name('customerWishlist');
 
 
 Route::get('/login', function () {
