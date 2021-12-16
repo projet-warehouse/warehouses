@@ -41,7 +41,7 @@
           {{-- <li class="nav-item nav-category">Main</li> --}}
           <li class="nav-item">
             <a href="/dashboard" class="nav-link">
-              <i class="link-icon" data-feather="box"></i>
+              <i class="link-icon" data-feather="book"></i>
               <span class="link-title">Dashboard</span>
             </a>
           </li>
@@ -50,6 +50,20 @@
             <a href="/newcontroller" class="nav-link">
               <i class="link-icon" data-feather="users"></i>
               <span class="link-title">Ajouter Utilisateur</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/editcontroller" class="nav-link">
+              <i class="link-icon" data-feather="edit"></i>
+              <span class="link-title">Editer Utilisateur</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/addcategory" class="nav-link">
+              <i class="link-icon" data-feather="gift"></i>
+              <span class="link-title">Ajouter une catégorie</span>
             </a>
           </li>
           {{-- <li class="nav-item">

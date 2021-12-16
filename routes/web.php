@@ -104,6 +104,18 @@ Route::get('/newcontroller', function () {
     return view('admin/pages/newcontroller');
 })->name('newcontroller');
 
+Route::get('/editcontroller', function () {
+    return view('admin/pages/editcontroller');
+})->name('editcontroller');
+
+Route::get('/addcategory', function () {
+    return view('admin/pages/addcategory');
+})->name('addcategory');
+
+Route::get('/addproduct', function () {
+    return view('admin/pages/addproduct');
+})->name('addproduct');
+
 
 // Route::get('/compose', function () {
 //     return view('admin/pages/email/compose');
