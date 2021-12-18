@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PersonnelController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -103,9 +104,9 @@ Route::get('/dashboard', function () {
     return view('admin/dashboard');
 })->name('lightDashboard');
 
-Route::get('/newcontroller', function () {
-    return view('admin/pages/newcontroller');
-})->name('newcontroller');
+Route::get('/newcontroller',[PersonnelController::class, "index"]);
+    /*return view('admin/pages/newcontroller');
+})->name('newcontroller');*/
 
 Route::get('/editcontroller', function () {
     return view('admin/pages/editcontroller');
