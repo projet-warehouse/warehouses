@@ -18,7 +18,7 @@ class HomeController extends Controller
         }
 
         else{
-            return View('visitor/myaccount');
+            return View('visitor/customer/index_myaccount');
         }
     }
 }

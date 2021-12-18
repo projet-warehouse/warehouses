@@ -15,7 +15,7 @@
             <h4 class="mb-3 mb-md-0">Ajouter un nouveau controlleur</h4>
           </div>
         <div class="card p-4">
-            <form>
+            <form method="POST">
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label>Nom</label>
@@ -46,13 +46,13 @@
                         </select>
                     </div>
                     <div class="form-group col-md-5 mx-auto">
-                        <label>Photo de profil</label> 
+                        <label>Photo de profil</label>
                         <input type="file" class="form-control-file" id="photo" name="photo">
                       </div>
                   </div>
                 <button type="submit" class="btn btn-primary">Ajouter</button>
               </form>
         </div>
-          
+
 	@include('admin/partials/footer')
 @endsection
