@@ -1,3 +1,4 @@
+
 <nav class="sidebar">
       <div class="sidebar-header">
         <a href="#" class="sidebar-brand">
@@ -22,20 +23,15 @@
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
               <i class="link-icon" data-feather="mail"></i>
-              <span class="link-title">Email</span>
+              <span class="link-title">Categorie</span>
               <i class="link-arrow" data-feather="chevron-down"></i>
             </a>
             <div class="collapse" id="emails">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="pages/email/inbox.html" class="nav-link">Inbox</a>
+                  <a href="" class="nav-link">Ajout de catégorie</a>
                 </li>
-                <li class="nav-item">
-                  <a href="pages/email/read.html" class="nav-link">Read</a>
-                </li>
-                <li class="nav-item">
-                  <a href="pages/email/compose.html" class="nav-link">Compose</a>
-                </li>
+
               </ul>
             </div>
           </li>
@@ -310,6 +306,10 @@
       </div>
     </nav>
     @include('admin/partials/themes')
+
+<link rel='stylesheet' href='{{asset('admin_assets/css/demo_1/style.css')}}' id='themeColor'>
+
+<link rel='stylesheet' href='{{asset('admin_assets/css/demo_1/style.css')}}' id='themeColor'>
 <nav class="settings-sidebar">
   <div class="sidebar-body">
     <a href="#" class="settings-sidebar-toggler">
@@ -332,24 +332,39 @@
     </div>
     <div class="theme-wrapper">
       <h6 class="text-muted mb-2">Light Theme:</h6>
-      <a class="theme-item active" onclick="themes()">
+      <a class="theme-item active" onclick="themes('light')">
         <img src="{{asset('admin_assets/images/screenshots/light.jpg')}}" alt="light theme">
       </a>
       <h6 class="text-muted mb-2">Dark Theme:</h6>
-      <a class="theme-item">
+      <a class="theme-item" onclick="themes('dark')">
         <img src="{{asset('admin_assets/images/screenshots/dark.jpg')}}" alt="light theme">
       </a>
     </div>
   </div>
 </nav>
 
-{{-- <link rel="stylesheet" href="{{asset('admin_assets/css/demo_1/style.css')}}" id="themeColor"> --}}
-
 <script>
+
    var theme = document.getElementById(themeColor);
    var darkLink = "{{asset('admin_assets/css/demo_2/style.css')}}";
   function themes(){
     theme.textContent = "<link rel='stylesheet' href='{{asset('admin_assets/css/demo_1/style.css')}}' id='themeColor'>"
   }
   // themes();
+</script>
+<script>
+  var theme = document.getElementById('themeColor');
+    var darkLink = "{{asset('admin_assets/css/demo_2/style.css')}}";
+    var lightLink = "{{asset('admin_assets/css/demo_1/style.css')}}";
+    function themes(color) {
+      if (color == 'dark') {
+        theme.href = darkLink;
+        console.log(color)
+      }
+
+     else if (color == 'light') {
+        theme.href = lightLink;
+        console.log(color)
+      }
+    }
 </script>

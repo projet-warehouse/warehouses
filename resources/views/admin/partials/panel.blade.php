@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="{{asset('admin_assets/vendors/flag-icon-css/css/flag-icon.min.css')}}">
 	<!-- endinject -->
 
+
   <div id="themeColor">
     {{-- <link rel='stylesheet' href='{{asset('admin_assets/css/demo_1/style.css')}}' id='themeColor'> --}}
 
@@ -52,15 +53,65 @@
           {{-- <li class="nav-item nav-category">Main</li> --}}
           <li class="nav-item">
             <a href="/dashboard" class="nav-link">
-              <i class="link-icon" data-feather="box"></i>
+              <i class="link-icon" data-feather="book"></i>
               <span class="link-title">Dashboard</span>
             </a>
           </li>
           <li class="nav-item nav-category">web apps</li>
 
-          {{-- <li class="nav-item nav-category">web apps</li> --}}
+          {{-- <li class="nav-item nav-category">web apps</li> --}
 
           <li class="nav-item">
+            <a href="/newcontroller" class="nav-link">
+              <i class="link-icon" data-feather="users"></i>
+              <span class="link-title">Ajouter Utilisateur</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/editcontroller" class="nav-link">
+              <i class="link-icon" data-feather="edit"></i>
+              <span class="link-title">Editer Utilisateur</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+
+            <a href="/newcontroller" class="nav-link">
+              <i class="link-icon" data-feather="users"></i>
+              <span class="link-title">Ajouter Utilisateur</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/editcontroller" class="nav-link">
+              <i class="link-icon" data-feather="edit"></i>
+              <span class="link-title">Editer Utilisateur</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+
+            <a href="/addcategory" class="nav-link">
+              <i class="link-icon" data-feather="gift"></i>
+              <span class="link-title">Ajouter une catégorie</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/addproduct" class="nav-link">
+              <i class="link-icon" data-feather="box"></i>
+              <span class="link-title">Ajouter un produit</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/order" class="nav-link">
+              <i class="link-icon" data-feather="shopping-bag"></i>
+              <span class="link-title">Commandes</span>
+            </a>
+          </li>
+          {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
               <i class="link-icon" data-feather="mail"></i>
               <span class="link-title">Email</span>
@@ -86,17 +137,24 @@
                 </li>
               </ul>
             </div>
+
           </li>
            <li class="nav-item">
             <a href="pages/apps/calendar.html" class="nav-link">
 
+
+          </li> --}}
+           {{-- <li class="nav-item">
+
+          </li> --}}
+           {{-- <li class="nav-item">
             <a href="/calendar" class="nav-link">
 
               <i class="link-icon" data-feather="calendar"></i>
               <span class="link-title">Calendar</span>
             </a>
-          </li>
-          
+          </li> --}}
+
           <li class="nav-item">
           {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#forms" role="button" aria-expanded="false" aria-controls="forms">
@@ -125,7 +183,7 @@
               <a href="pages/tables/data-table.html" class="nav-link">
 
           </li> --}}
-          <li class="nav-item">
+          {{-- <li class="nav-item">
               <a href="/table" class="nav-link">
                 <i class="link-icon" data-feather="layout"></i>
                 <span class="link-title">Table</span>
@@ -142,24 +200,25 @@
               </ul>
             </div>
           </li>
-         
+
           <li class="nav-item nav-category">Pages</li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#general-pages" role="button" aria-expanded="false" aria-controls="general-pages">
               <i class="link-icon" data-feather="book"></i>
               <span class="link-title">Invoice</span>
           </li>
-         
+
+          </li>
+          </li> --}}
           {{-- <li class="nav-item nav-category">Pages</li> --}}
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a href="/invoice" class="nav-link">
               <i class="link-icon" data-feather="book"></i>
               <span class="link-title">Invoice</span>
             </a>
-          </a>
-        </li>
-              
-          <li class="nav-item">
+        </li> --}}
+
+          {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#authPages" role="button" aria-expanded="false" aria-controls="authPages">
               <i class="link-icon" data-feather="unlock"></i>
               <span class="link-title">Authentication</span>
@@ -187,11 +246,15 @@
               <i class="link-arrow" data-feather="chevron-down"></i>
             </a>
     </nav>
+
+
+          </li> --}}
+          </li> --}}
     </nav>
   </div>
-    
+
       @yield('content')
-		
+
 		</div>
 	</div>
 	<!-- core:js -->
@@ -224,4 +287,4 @@
   <script src="{{asset('admin_assets/js/dashboard.js')}}"></script>
 	<!-- end custom js for this page -->
 </body>
-</html>    
+</html>
