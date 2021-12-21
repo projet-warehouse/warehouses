@@ -1,6 +1,10 @@
 <?php
 
-use App\Http\Controllers\PersonnelController;
+use App\Http\Controllers;
+use App\Http\Controllers\PersonnelsController;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\PermissionsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -104,7 +108,7 @@ Route::get('/dashboard', function () {
     return view('admin/dashboard');
 })->name('lightDashboard');
 
-Route::get('/newcontroller',[PersonnelController::class, "index"]);
+//Route::get('/newcontroller',[PersonnelsController::class, "index"]);
     /*return view('admin/pages/newcontroller');
 })->name('newcontroller');*/
 
@@ -155,3 +159,52 @@ Route::get('/addproduct', function () {
 Route::get('/admin_register', function () {
     return view('admin/pages/auth/register');
 })->name('adminregister');
+
+//liste des routes pour les role et permissions
+
+Route::group(['middleware' => ['auth']], function() {
+    /**
+     * Logout Routes
+     */
+    //Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
+
+    /**
+     * User Routes
+     */
+    Route::group(['prefix' => 'users'], function() {
+        Route::get('/', 'UsersController@index')->name('users.index');
+        Route::get('/create', 'UsersController@create')->name('users.create');
+        Route::post('/create', 'UsersController@store')->name('users.store');
+        Route::get('/{user}/show', 'UsersController@show')->name('users.show');
+        Route::get('/{user}/edit', 'UsersController@edit')->name('users.edit');
+        Route::patch('/{user}/update', 'UsersController@update')->name('users.update');
+        Route::delete('/{user}/delete', 'UsersController@destroy')->name('users.destroy');
+    });
+
+    /**
+     * User Routes
+     */
+    Route::group(['prefix' => 'personnels'], function() {
+        Route::get('/', [personnelsController::class, 'index'])->name('admin.personnels.index');
+        Route::get('/create', [personnelsController::class, 'create'])->name('admin.personnels.create');
+        Route::post('/create', [personnelsController::class, 'store'])->name('admin.personnels.store');
+        Route::get('/{personnels}/show', [personnelsController::class, 'show'])->name('admin.personnels.show');
+        Route::get('/{personnels}/edit', [personnelsController::class, 'edit'])->name('admin.personnels.edit');
+        Route::patch('/{personnels}/update', [personnelsController::class, 'update'])->name('admin.personnels.update');
+        Route::delete('/{personnels}/delete', [personnelsController::class, 'destroy'])->name('admin.personnels.destroy');
+    });
+
+    /*Route::group(['prefix' => 'roles'], function() {
+        Route::get('/', [personnelsController::class, 'index'])->name('admin.roles.index');
+        Route::get('/create', [personnelsController::class, 'create'])->name('admin.roles.create');
+        Route::post('/create', [personnelsController::class, 'store'])->name('admin.roles.store');
+        Route::get('/{roles}/show', [personnelsController::class, 'show'])->name('admin.roles.show');
+        Route::get('/{roles}/edit', [personnelsController::class, 'edit'])->name('admin.roles.edit');
+        Route::patch('/{roles}/update', [personnelsController::class, 'update'])->name('admin.roles.update');
+        Route::delete('/{roles}/delete', [personnelsController::class, 'destroy'])->name('admin.roles.destroy');
+    });*/
+
+    Route::resource('users', UserController::class);
+    Route::resource('roles', RoleController::class);
+    Route::resource('permissions', PermissionsController::class);
+});
