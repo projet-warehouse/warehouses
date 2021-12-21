@@ -13,14 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('page.index');
-});
+// Route::get('/', function () {
+//     return view('visitor.index');
+// });
+
+// Pour les route de la page clients page d'accueil 
+Route::get('/',[\App\Http\Controllers\FontendController::class, 'index']);
+
 Route::get('/admin', function () {
     return view('admin.index');
 });
 
-// [\App\Http\Controllers\Admin\ProductController::class, 'Active']
+// [\App\Http\Controllers\Admin\FontendController::class, 'Active']
 
 // ====================== Debut Admin Category ===============
 Route::get('admin/categories', [\App\Http\Controllers\Admin\CategoryController::class, 'index'])->name('admin.category');
