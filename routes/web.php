@@ -104,7 +104,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('redirects', [HomeController::class, 'index'])->name('visitor.index');
+Route::get('redirects', 'App\Http\Controllers\HomeController@index');
 Route::get('/dashboard', function () {
     return view('admin/dashboard');
 })->name('lightDashboard');

@@ -28,18 +28,16 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
-    {
-        /*if (Auth::user()->hasRole('user')) {
-            return view('visitor/customer/index_myaccount');
-        } else {
-            return view('admin/dashboard');
-        }*/
+        public function index()
+        {
+            $role=Auth::user()->role;
 
-        if ($roles == "user") {
-            return View('visitor/customer/index_myaccount');
-        } else {
-            return view('admin/dashboard');
+            if ($role === "user") {
+               return View('visitor/customer/index_myaccount');
+            }
+
+            else{
+                return View('admin/dashboard');
+            }
         }
-    }
 }
