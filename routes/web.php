@@ -2,6 +2,9 @@
 
 use Facade\Ignition\Exceptions\ViewException;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PersonnelController;
+
+
 
 
 //Page d'accueil
@@ -162,3 +165,19 @@ Route::get('/admin_login', function () {
 Route::get('/admin_register', function () {
     return view('admin/pages/auth/register');
 })->name('adminregister');
+
+//les permissions
+Route::resource('personnel', PersonnelController::class);
+
+Route::get('newsletter', [\App\Http\Controllers\NewsletterController::class, 'index']);
+Route::post('newsletter/store','NewsletterController@store');
+
+// //newsletter
+// Route::get('App/Http/Controllers/NewsletterController', function () {
+//     return view('App/Http/Controllers/NewsletterController');
+// })->name('NewsletterController');
+
+// Route::get('resource/views/newsletter', function () {
+//     return view('resource/views/newsletter');
+// })->name('newsletter');
+

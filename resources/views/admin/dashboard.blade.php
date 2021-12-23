@@ -7,7 +7,7 @@
 @include('admin/partials/themes')
 
 		<div class="page-wrapper">
-					
+
 			<!-- partial -->
       @include('admin/partials/navbar')
 			<!-- partial -->
@@ -226,7 +226,7 @@
                 <div class="monthly-sales-chart-wrapper">
                   <canvas id="monthly-sales-chart"></canvas>
                 </div>
-              </div> 
+              </div>
             </div>
           </div>
           <div class="col-lg-5 col-xl-4 grid-margin stretch-card">
@@ -443,7 +443,7 @@
                     </tbody>
                   </table>
                 </div>
-              </div> 
+              </div>
             </div>
           </div>
         </div> <!-- row -->
@@ -457,7 +457,7 @@
 				<p class="text-muted text-center text-md-left mb-0 d-none d-md-block">Handcrafted With <i class="mb-1 text-primary ml-1 icon-small" data-feather="heart"></i></p>
 			</footer>
 			<!-- partial -->
-		
+
 		</div>
 	</div>
 
@@ -481,7 +481,7 @@
   <script src="{{asset('admin_assets/js/datepicker.js')}}"></script>
 	<!-- end custom js for this page -->
 </body>
-</html>    
+</html>
       @include('admin/partials/footer')
 @endsection
-		
+
