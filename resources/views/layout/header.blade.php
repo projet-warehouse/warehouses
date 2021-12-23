@@ -128,9 +128,13 @@
                                     <li><a href="/home">Voir ma Boutique</a></li>
                                     <li>
                                         <form method="POST" action="{{ route('logout') }}">
-                                            @csrf
-                                            <a href="{{ __('Logout') }}">Se deconnecter</a>
-                                        </form>
+											@csrf
+
+											<a href="{{ route('logout') }}"
+														onclick="event.preventDefault();
+															this.closest('form').submit();">Deconnexion
+											</a>
+										</form>
                                     </li>
                                 </ul>
                                 @else

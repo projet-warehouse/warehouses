@@ -22,6 +22,7 @@ class user extends Seeder
             'name' => Str::random(10),
             'email' => Str::random(10).'@gmail.com',
             'phone' => Str::random(10),
+            'role' => Str::random(10),
             'password' => Hash::make('password'),
         ]);
     }

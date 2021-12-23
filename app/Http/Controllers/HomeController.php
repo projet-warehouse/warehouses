@@ -30,8 +30,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if (Auth::user()->hasRole('Super-Admin')) {
+        /*if (Auth::user()->hasRole('user')) {
             return view('visitor/customer/index_myaccount');
+        } else {
+            return view('admin/dashboard');
+        }*/
+
+        if ($roles == "user") {
+            return View('visitor/customer/index_myaccount');
         } else {
             return view('admin/dashboard');
         }

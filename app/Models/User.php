@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
-use Spatie\Permission\Traits\HasRoles;
+use Spatie\Permission\Traits\HasRoles;s
 
 class User extends Authenticatable
 {
@@ -29,6 +29,7 @@ class User extends Authenticatable
         'name',
         'email',
         'phone',
+        'role',
         'password',
     ];
 

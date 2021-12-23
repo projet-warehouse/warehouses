@@ -55,7 +55,7 @@
 											<a href="/register" class="btn">S'enregister</a>
 										</div>
 										<div class="checkbox">
-											<label class="checkbox-inline" for="2 remember_me"><input id="remember_me" name="remember" type="checkbox">{{ __('Remember me') }}</label>
+											<input id="remember_me" name="remember" type="checkbox"><span>{{ __('Remember me') }}</span>
 										</div>
                                         @if (Route::has('password.request'))
                                             <a class="lost-pass" href="{{ route('password.request') }}">

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers;
 use App\Http\Controllers\PersonnelsController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PermissionsController;
@@ -103,7 +104,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('redirects', 'App\Http\Controllers\HomeController@index');
+Route::get('redirects', [HomeController::class, 'index'])->name('visitor.index');
 Route::get('/dashboard', function () {
     return view('admin/dashboard');
 })->name('lightDashboard');
