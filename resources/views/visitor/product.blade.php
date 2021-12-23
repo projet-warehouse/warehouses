@@ -31,17 +31,17 @@
 											<!-- Images slider -->
 											<div class="flexslider-thumbnails">
 												<ul class="slides">
-													<li data-thumb="https://via.placeholder.com/570x520" rel="adjustX:10, adjustY:">
-														<img src="https://via.placeholder.com/570x520" alt="#">
+													<li data-thumb="{{ asset($product->image_one) }}" rel="adjustX:10, adjustY:">
+														<img src="{{ asset($product->image_one) }}" alt="#">
 													</li>
-													<li data-thumb="https://via.placeholder.com/570x520">
-														<img src="https://via.placeholder.com/570x520" alt="#">
+													<li data-thumb="{{ asset($product->image_one) }}">
+														<img src="{{ asset($product->image_one) }}" alt="#">
 													</li>
-													<li data-thumb="https://via.placeholder.com/570x520">
-														<img src="https://via.placeholder.com/570x520" alt="#">
+													<li data-thumb="{{ asset($product->image_two) }}">
+														<img src="{{ asset($product->image_two) }}" alt="#">
 													</li>
-													<li data-thumb="https://via.placeholder.com/570x520">
-														<img src="https://via.placeholder.com/570x520" alt="#">
+													<li data-thumb="{{ asset($product->image_three) }}">
+														<img src="{{ asset($product->image_three) }}" alt="#">
 													</li>
 												</ul>
 											</div>
@@ -53,7 +53,7 @@
 										<div class="product-des">
 											<!-- Description -->
 											<div class="short">
-												<h4>Nonstick Dishwasher PFOA</h4>
+												<h4>{{ $product->product_name }}</h4>
 												<div class="rating-main">
 													<ul class="rating">
 														<li><i class="fa fa-star"></i></li>
@@ -62,15 +62,17 @@
 														<li><i class="fa fa-star-half-o"></i></li>
 														<li class="dark"><i class="fa fa-star-o"></i></li>
 													</ul>
-													<a href="" class="total-review">(102) Review</a>
+													<a href="" class="total-review">(102) Vues</a>
 												</div>
-												<p class="price"><span class="discount">$70.00</span><s>$80.00</s> </p>
-												<p class="description">eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in</p>
+												<p class="price"><span class="discount">{{ $product->price }} Frc</span><s>400.000 Frc</s> </p>
+												<p class="description">
+												{!! $product->short_description !!}
+												</p>
 											</div>
 											<!--/ End Description -->
 											<!-- Color -->
 											<div class="color">
-												<h4>Available Options <span>Color</span></h4>
+												<h4>Option Disponible<span>Couleur</span></h4>
 												<ul>
 													<li><a href="" class="one"><i class="ti-check"></i></a></li>
 													<li><a href="" class="two"><i class="ti-check"></i></a></li>

@@ -27,7 +27,7 @@
 						<div class="shop-sidebar">
 								<!-- Single Widget -->
 								<div class="single-widget category">
-									<h3 class="title">Categories</h3>
+									<h3 class="title">Tous les Categories</h3>
 									<ul class="categor-list">
 										<li><a href="">T-shirts</a></li>
 										<li><a href="">jacket</a></li>
@@ -41,7 +41,7 @@
 								<!--/ End Single Widget -->
 								<!-- Shop By Price -->
 									<div class="single-widget range">
-										<h3 class="title">Shop by Price</h3>
+										<h3 class="title">Choix du prix</h3>
 										<div class="price-filter">
 											<div class="price-filter-inner">
 												<div id="slider-range"></div>
@@ -67,11 +67,11 @@
 									<!--/ End Shop By Price -->
 								<!-- Single Widget -->
 								<div class="single-widget recent-post">
-									<h3 class="title">Recent post</h3>
+									<h3 class="title">Recente poste</h3>
 									<!-- Single Post -->
 									<div class="single-post first">
 										<div class="image">
-											<img src="https://via.placeholder.com/75x75" alt="#">
+										<img src="{{ asset('images/produits/1719713581007257.jpg')}}" alt="#">
 										</div>
 										<div class="content">
 											<h5><a href="">Girls Dress</a></h5>
@@ -89,7 +89,7 @@
 									<!-- Single Post -->
 									<div class="single-post first">
 										<div class="image">
-											<img src="https://via.placeholder.com/75x75" alt="#">
+											<img src="{{ asset('images/produits/1719713568385430.jpg')}}" alt="#">
 										</div>
 										<div class="content">
 											<h5><a href="">Women Clothings</a></h5>
@@ -107,7 +107,7 @@
 									<!-- Single Post -->
 									<div class="single-post first">
 										<div class="image">
-											<img src="https://via.placeholder.com/75x75" alt="#">
+										<img src="{{ asset('images/produits/1719713579838762.jpg')}}" alt="#">
 										</div>
 										<div class="content">
 											<h5><a href="">Man Tshirt</a></h5>
@@ -171,33 +171,36 @@
 							</div>
 						</div>
 						<div class="row">
+						    @foreach ($products as $product)
 							<div class="col-lg-4 col-md-6 col-12">
+
 								<div class="single-product">
 									<div class="product-img">
-										<a href="/products">
-											<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
-											<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
+										<a href="{{ url('proudct/details/'.$product->id) }}">
+											<img class="default-img" src="{{ asset($product->image_one) }}" alt="#">
+											<img class="hover-img" src="{{ asset($product->image_one) }}" alt="#">
 										</a>
 										<div class="button-head">
 											<div class="product-action">
 												<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-												<a title="Wishlist" href=""><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-												<a title="Compare" href=""><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+												<a title="Wishlist" href="{{ url('proudct/details/'.$product->id) }}"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+												<a title="Compare" href="{{ url('proudct/details/'.$product->id) }}"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
 											</div>
 											<div class="product-action-2">
-												<a title="Add to cart" href="">Add to cart</a>
+												<a title="Add to cart" href="">Ajouter au panier</a>
 											</div>
 										</div>
 									</div>
 									<div class="product-content">
-										<h3><a href="/products">Women Hot Collection</a></h3>
+										<h3><a href="{{ url('proudct/details/'.$product->id) }}"> {{ $product->product_name }}</a></h3>
 										<div class="product-price">
-											<span>$29.00</span>
+											<span><b>{{ $product->price }} Frc</b></span>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-4 col-md-6 col-12">
+							@endforeach
+							<!-- <div class="col-lg-4 col-md-6 col-12">
 								<div class="single-product">
 									<div class="product-img">
 										<a href="/products">
@@ -409,7 +412,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>

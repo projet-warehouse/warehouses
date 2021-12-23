@@ -60,7 +60,7 @@ class CategoryController extends Controller
             'updated_at' => Carbon::now()
         ]);
 
-        return Redirect()->route('admin.Category')->with('Catupdated','Categorie a été modifié avec Succès');
+        return Redirect()->back()->with('Catupdated','Categorie a été modifié avec Succès');
     }
 
 

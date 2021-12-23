@@ -20,7 +20,7 @@ class FontendController extends Controller
         $product = Product::findOrFail($product_id);
         $category_id = $product->category_id;
         $related_p = Product::where('category_id',$category_id)->where('id','!=',$product_id)->latest()->get();
-        return view('pages.product-deatails',compact('product','related_p'));
+        return view('visitor.product',compact('product','related_p'));
     }
 
     // ==================================== shop Page ===========================
@@ -35,6 +35,6 @@ class FontendController extends Controller
     public function catWiseProduct($cat_id){
         $products = Product::where('category_id',$cat_id)->latest()->paginate(9);
         $categories = Category::where('status',1)->latest()->get();
-        return view('pages.cat-product',compact('products','categories'));
+        return view('visitor.products-grid',compact('products','categories'));
     }
 }

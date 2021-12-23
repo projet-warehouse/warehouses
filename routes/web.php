@@ -16,9 +16,18 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('visitor.index');
 // });
+//=====================PARTIE UTILISATEUR CLIENT=============//
 
 // Pour les route de la page clients page d'accueil 
 Route::get('/',[\App\Http\Controllers\FontendController::class, 'index']);
+
+//shop page rotues
+Route::get('shop','FontendController@shopPage')->name('shop.page');
+//categorywise product show
+Route::get('category/product-show/{id}', [\App\Http\Controllers\FontendController::class, 'catWiseProduct']);
+// ============= product details ============
+Route::get('proudct/details/{product_id}',[\App\Http\Controllers\FontendController::class, 'productDetail']);
+
 
 Route::get('/admin', function () {
     return view('admin.index');
