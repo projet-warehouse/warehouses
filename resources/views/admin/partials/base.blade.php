@@ -41,7 +41,7 @@
                     <ul class="nav">
                     <li class="nav-item nav-category">Principal</li>
                     <li class="nav-item">
-                        <a href="dashboard-one.html" class="nav-link">
+                        <a href="{{ route('lightDashboard')}}" class="nav-link">
                         <i class="link-icon" data-feather="box"></i>
                         <span class="link-title">Dashboard</span>
                         </a>
@@ -540,17 +540,19 @@
                                 <div class="dropdown-menu" aria-labelledby="profileDropdown">
                                     <div class="dropdown-header d-flex flex-column align-items-center">
                                         <div class="figure mb-3">
-                                            <img src="https://via.placeholder.com/80x80" alt="">
+                                            @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
+                                                <img src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}">
+                                            @endif
                                         </div>
                                         <div class="info text-center">
-                                            <p class="name font-weight-bold mb-0">Amiah Burton</p>
-                                            <p class="email text-muted mb-3">amiahburton@gmail.com</p>
+                                            <p class="name font-weight-bold mb-0">{{ Auth::user()->name }}</p>
+                                            <p class="email text-muted mb-3">{{ Auth::user()->email }}</p>
                                         </div>
                                     </div>
                                     <div class="dropdown-body">
                                         <ul class="profile-nav p-0 pt-3">
                                             <li class="nav-item">
-                                                <a href="pages/general/profile.html" class="nav-link">
+                                                <a href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')" class="nav-link">
                                                     <i data-feather="user"></i>
                                                     <span>Profile</span>
                                                 </a>
@@ -568,10 +570,15 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="javascript:;" class="nav-link">
-                                                    <i data-feather="log-out"></i>
-                                                    <span>Log Out</span>
-                                                </a>
+                                                <form method="POST" action="{{ route('logout') }}">
+                                                    @csrf
+
+                                                    <a href="{{ route('logout') }}"
+                                                                   onclick="event.preventDefault();
+                                                                    this.closest('form').submit();">
+                                                        Deconnexion
+                                                    </a>
+                                                </form>
                                             </li>
                                         </ul>
                                     </div>

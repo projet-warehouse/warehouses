@@ -124,13 +124,12 @@
                                 <ul class="list-main">
                                     {{-- <li><i class="ti-location-pin"></i> Store location</li>
                                     <li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li> --}}
-                                    <li><i class="ti-user"></i> <a href="/home">Voir ma Boutique</a></li>
+                                    <li><h6 class="dropdown-header"><i class="ti-user"></i> {{ Auth::user()->name }}</h6></li>
+                                    <li><a href="/home">Voir ma Boutique</a></li>
                                     <li>
                                         <form method="POST" action="{{ route('logout') }}">
                                             @csrf
-                                            <button>
-                                                {{ __('Logout') }}
-                                            </button>
+                                            <a href="{{ __('Logout') }}">Se deconnecter</a>
                                         </form>
                                     </li>
                                 </ul>
