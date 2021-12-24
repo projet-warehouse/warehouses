@@ -200,7 +200,7 @@
 							<div class="col-lg-4 col-md-6 col-12">
 								<div class="single-product">
 									<div class="product-img">
-										<a href="/products">
+										<a href="/product">
 											<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
 											<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
 										</a>
@@ -216,7 +216,7 @@
 										</div>
 									</div>
 									<div class="product-content">
-										<h3><a href="/products">Awesome Pink Show</a></h3>
+										<h3><a href="/product">Awesome Pink Show</a></h3>
 										<div class="product-price">
 											<span>$29.00</span>
 										</div>
@@ -226,7 +226,7 @@
 							<div class="col-lg-4 col-md-6 col-12">
 								<div class="single-product">
 									<div class="product-img">
-										<a href="/products">
+										<a href="/product">
 											<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
 											<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
 										</a>
@@ -242,7 +242,7 @@
 										</div>
 									</div>
 									<div class="product-content">
-										<h3><a href="/products">Awesome Bags Collection</a></h3>
+										<h3><a href="/product">Awesome Bags Collection</a></h3>
 										<div class="product-price">
 											<span>$29.00</span>
 										</div>
@@ -252,7 +252,7 @@
 							<div class="col-lg-4 col-md-6 col-12">
 								<div class="single-product">
 									<div class="product-img">
-										<a href="/products">
+										<a href="/product">
 											<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
 											<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
 											<span class="new">New</span>
@@ -269,7 +269,7 @@
 										</div>
 									</div>
 									<div class="product-content">
-										<h3><a href="/products">Women Pant Collectons</a></h3>
+										<h3><a href="/product">Women Pant Collectons</a></h3>
 										<div class="product-price">
 											<span>$29.00</span>
 										</div>
@@ -279,7 +279,7 @@
 							<div class="col-lg-4 col-md-6 col-12">
 								<div class="single-product">
 									<div class="product-img">
-										<a href="/products">
+										<a href="/product">
 											<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
 											<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
 										</a>
@@ -295,7 +295,7 @@
 										</div>
 									</div>
 									<div class="product-content">
-										<h3><a href="/products">Awesome Bags Collection</a></h3>
+										<h3><a href="/product">Awesome Bags Collection</a></h3>
 										<div class="product-price">
 											<span>$29.00</span>
 										</div>
@@ -305,7 +305,7 @@
 							<div class="col-lg-4 col-md-6 col-12">
 								<div class="single-product">
 									<div class="product-img">
-										<a href="/products">
+										<a href="/product">
 											<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
 											<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
 											<span class="price-dec">30% Off</span>
@@ -322,7 +322,7 @@
 										</div>
 									</div>
 									<div class="product-content">
-										<h3><a href="/products">Awesome Cap For Women</a></h3>
+										<h3><a href="/product">Awesome Cap For Women</a></h3>
 										<div class="product-price">
 											<span>$29.00</span>
 										</div>
@@ -332,7 +332,7 @@
 							<div class="col-lg-4 col-md-6 col-12">
 								<div class="single-product">
 									<div class="product-img">
-										<a href="/products">
+										<a href="/product">
 											<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
 											<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
 										</a>
@@ -348,7 +348,7 @@
 										</div>
 									</div>
 									<div class="product-content">
-										<h3><a href="/products">Polo Dress For Women</a></h3>
+										<h3><a href="/product">Polo Dress For Women</a></h3>
 										<div class="product-price">
 											<span>$29.00</span>
 										</div>
@@ -358,7 +358,7 @@
 							<div class="col-lg-4 col-md-6 col-12">
 								<div class="single-product">
 									<div class="product-img">
-										<a href="/products">
+										<a href="/product">
 											<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
 											<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
 											<span class="out-of-stock">Hot</span>
@@ -375,7 +375,7 @@
 										</div>
 									</div>
 									<div class="product-content">
-										<h3><a href="/products">Black Sunglass For Women</a></h3>
+										<h3><a href="/product">Black Sunglass For Women</a></h3>
 										<div class="product-price">
 											<span class="old">$60.00</span>
 											<span>$50.00</span>
@@ -386,7 +386,7 @@
 							<div class="col-lg-4 col-md-6 col-12">
 								<div class="single-product">
 									<div class="product-img">
-										<a href="/products">
+										<a href="/product">
 											<img class="default-img" src="https://via.placeholder.com/550x750" alt="#">
 											<img class="hover-img" src="https://via.placeholder.com/550x750" alt="#">
 											<span class="new">New</span>
@@ -403,7 +403,7 @@
 										</div>
 									</div>
 									<div class="product-content">
-										<h3><a href="/products">Women Pant Collectons</a></h3>
+										<h3><a href="/product">Women Pant Collectons</a></h3>
 										<div class="product-price">
 											<span>$29.00</span>
 										</div>

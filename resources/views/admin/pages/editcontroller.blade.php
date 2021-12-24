@@ -12,7 +12,7 @@
 
 	<div class="page-content">
         <div class="mb-3">
-            <h4 class="mb-3 mb-md-0">Ajouter un nouveau controlleur</h4>
+            <h4 class="mb-3 mb-md-0">Editer un controlleur</h4>
           </div>
         <div class="card p-4">
             <form>

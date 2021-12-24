@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Banner;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\bannerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('visitor/index');
+    return view('visitor/index')
+     ->with('banner', Banner::all()
+        ->last()
+    );
 })->name('home');
 
 Route::get('/about', function () {
@@ -119,6 +124,14 @@ Route::get('/addproduct', function () {
 Route::get('/order', function () {
     return view('admin/pages/order');
 })->name('orderManagement');
+
+Route::get('/banner', [bannerController::class, 'index'])->name('banner');
+
+Route::post('/banner/edit', [bannerController::class, 'create']);
+
+Route::get('/banner/edit', function(){
+    return view('admin/pages/editbanner');
+})->name('edit.banner');
 
 
 // Route::get('/compose', function () {
