@@ -92,7 +92,7 @@
               <span class="link-title">Calendar</span>
             </a>
           </li> --}}
-          
+
           {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#forms" role="button" aria-expanded="false" aria-controls="forms">
               <i class="link-icon" data-feather="inbox"></i>
@@ -123,7 +123,7 @@
               </a>
             </a>
           </li> --}}
-         
+
           {{-- <li class="nav-item nav-category">Pages</li> --}}
           {{-- <li class="nav-item">
             <a href="/invoice" class="nav-link">
@@ -131,7 +131,7 @@
               <span class="link-title">Invoice</span>
             </a>
         </li> --}}
-              
+
           {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#authPages" role="button" aria-expanded="false" aria-controls="authPages">
               <i class="link-icon" data-feather="unlock"></i>
@@ -151,9 +151,9 @@
           </li> --}}
     </nav>
   </div>
-    
+
       @yield('content')
-		
+
 		</div>
 	</div>
 	<!-- core:js -->
@@ -186,4 +186,4 @@
   <script src="{{asset('admin_assets/js/dashboard.js')}}"></script>
 	<!-- end custom js for this page -->
 </body>
-</html>    
+</html>

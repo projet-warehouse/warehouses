@@ -82,7 +82,7 @@
 									<div class="col-12">
 										<div class="form-group login-btn">
 											<button class="btn" type="submit">{{ __('Register') }}</button>
-											<a href="{{ route('login')}}" class="btn">{{ __('Already registered?') }}</a>
+											<a href="{{ route('login')}}" class="">{{ __('Already registered?') }}</a>
 										</div>
 										<div class="checkbox">
 											<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">S'inscrire au Newsletter</label>

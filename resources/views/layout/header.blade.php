@@ -124,14 +124,17 @@
                                 <ul class="list-main">
                                     {{-- <li><i class="ti-location-pin"></i> Store location</li>
                                     <li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li> --}}
-                                    <li><i class="ti-user"></i> <a href="/home">Voir ma Boutique</a></li>
+                                    <li><h6 class="dropdown-header"><i class="ti-user"></i> {{ Auth::user()->name }}</h6></li>
+                                    <li><a href="/home">Voir ma Boutique</a></li>
                                     <li>
                                         <form method="POST" action="{{ route('logout') }}">
-                                            @csrf
-                                            <button>
-                                                {{ __('Logout') }}
-                                            </button>
-                                        </form>
+											@csrf
+
+											<a href="{{ route('logout') }}"
+														onclick="event.preventDefault();
+															this.closest('form').submit();">Deconnexion
+											</a>
+										</form>
                                     </li>
                                 </ul>
                                 @else
@@ -164,7 +167,7 @@
 						<!--/ End Logo -->
 						<!-- Search Form -->
 						<div class="search-top">
-							<div class="top-search"><a href="#"><i class="ti-search"></i></a></div>
+							<div class="top-search"><a href="#0"><i class="ti-search"></i></a></div>
 							<!-- Search Form -->
 							<div class="search-top">
 								<form class="search-form">
