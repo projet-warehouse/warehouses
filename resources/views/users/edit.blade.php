@@ -38,7 +38,7 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label >Fonction</label>
-                    {!! Form::select('roles[]', $roles,$userRole, array('class' => 'form-control','multiple')) !!}
+                    {!! Form::select('roles[]', $roles,$userRole, array('class' => 'form-control')) !!}
                 </div>
             </div>
             <div class="form-row">
