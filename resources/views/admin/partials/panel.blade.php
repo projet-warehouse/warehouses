@@ -20,6 +20,8 @@
 	<link rel="stylesheet" href="{{asset('admin_assets/vendors/flag-icon-css/css/flag-icon.min.css')}}">
 	<!-- endinject -->
   <link rel="shortcut icon" href="{{asset('admin_assets/images/favicon.png')}}" />
+  {{-- <link rel="stylesheet" href="{{asset('css/styles.css')}}"> --}}
+
 </head>
 <body>
 	<div class="main-wrapper">
@@ -78,6 +80,13 @@
             <a href="/order" class="nav-link">
               <i class="link-icon" data-feather="shopping-bag"></i>
               <span class="link-title">Commandes</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/banner" class="nav-link">
+              <i class="link-icon" data-feather="image"></i>
+              <span class="link-title">Bannière</span>
             </a>
           </li>
           {{-- <li class="nav-item">
