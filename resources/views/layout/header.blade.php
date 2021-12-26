@@ -8,17 +8,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Title Tag  -->
-    <title>Eshop - eCommerce HTML5 Template.</title>
+    <title>{{ config('app.name')}}</title>
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="{{asset('images/favicon.png')}}">
 	<!-- Web Font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-	
+
    <!-- Font Awesome -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+
 	<!-- StyleSheet -->
-	
+
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
 	<!-- Magnific Popup -->
@@ -38,7 +38,7 @@
 	<!-- Owl Carousel -->
     <link rel="stylesheet" href="{{asset('css/owl-carousel.css')}}">
 	<!-- Slicknav -->
-    
+
 
 	<!-- customs css -->
 	<link rel="stylesheet" href="{{asset('css/styles.css')}}">
@@ -64,10 +64,10 @@
 	<!--<link rel="stylesheet" href="{{asset('css/color/color12.css')}}">-->
 
 	<link rel="stylesheet" href="#" id="colors">
-	
+
 </head>
 <body class="js">
-	
+
 	<!-- Preloader -->
 	<div class="preloader">
 		<div class="preloader-inner">
@@ -78,7 +78,7 @@
 		</div>
 	</div>
 	<!-- End Preloader -->
-	
+
 	<!-- Eshop Color Plate -->
 	<div class="color-plate ">
 		<a class="color-plate-icon"><i class="ti-paint-bucket"></i></a>
@@ -98,7 +98,7 @@
 		<span class="color12"></span>
 	</div>
 	<!-- /End Color Plate -->
-	
+
 	<!-- Header -->
 	<header class="header shop">
 		<!-- Topbar -->
@@ -117,15 +117,40 @@
 					</div>
 					<div class="col-lg-8 col-md-12 col-12">
 						<!-- Top Right -->
-						<div class="right-content">
-							<ul class="list-main">
-								{{-- <li><i class="ti-location-pin"></i> Store location</li>
-								<li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li> --}}
-								<li><i class="ti-user"></i> <a href="/myaccount">My account</a></li>
-								<li><i class="ti-power-off"></i><a href="/login">Login</a></li>
-							</ul>
-						</div>
-						<!-- End Top Right -->
+                        @if (Route::has('login'))
+
+                            <div class="right-content">
+                                @auth()
+                                <ul class="list-main">
+                                    {{-- <li><i class="ti-location-pin"></i> Store location</li>
+                                    <li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li> --}}
+                                    <li><h6 class="dropdown-header"><i class="ti-user"></i> {{ Auth::user()->name }}</h6></li>
+                                    <li><a href="/home">Voir ma Boutique</a></li>
+                                    <li>
+                                        <form method="POST" action="{{ route('logout') }}">
+											@csrf
+
+											<a href="{{ route('logout') }}"
+														onclick="event.preventDefault();
+															this.closest('form').submit();">Deconnexion
+											</a>
+										</form>
+                                    </li>
+                                </ul>
+                                @else
+
+                                <ul class="list-main">
+                                    {{-- <li><i class="ti-location-pin"></i> Store location</li>
+                                    <li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li> --}}
+                                    <li><i class="ti-power-off"></i><a href="{{ route('login') }}">Login</a></li>
+                                    @if (Route::has('register'))
+                                    <li><i class="ti-user"></i> <a href="{{ route('register')}}">{{_('Register')}}</a></li>
+                                    @endif
+                                </ul>
+                                @endif
+                            </div>
+                            <!-- End Top Right -->
+                        @endif
 					</div>
 				</div>
 			</div>
@@ -142,7 +167,7 @@
 						<!--/ End Logo -->
 						<!-- Search Form -->
 						<div class="search-top">
-							<div class="top-search"><a href="#"><i class="ti-search"></i></a></div>
+							<div class="top-search"><a href="#0"><i class="ti-search"></i></a></div>
 							<!-- Search Form -->
 							<div class="search-top">
 								<form class="search-form">
