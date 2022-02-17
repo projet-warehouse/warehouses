@@ -20,6 +20,8 @@
 	<link rel="stylesheet" href="{{asset('admin_assets/vendors/flag-icon-css/css/flag-icon.min.css')}}">
 	<!-- endinject -->
   <link rel="shortcut icon" href="{{asset('admin_assets/images/favicon.png')}}" />
+  {{-- <link rel="stylesheet" href="{{asset('css/styles.css')}}"> --}}
+
 </head>
 <body>
 	<div class="main-wrapper">
@@ -83,21 +85,36 @@
               <span class="link-title">Sous Catégories</span>
             </a>
           </li>
+<<<<<<< HEAD
            {{-- <li class="nav-item">
             <a href="/add/category" class="nav-link">
               <i class="link-icon" data-feather="gift"></i>
               <span class="link-title">Types</span>
+=======
+
+          <li class="nav-item">
+            <a href="/addproduct" class="nav-link">
+              <i class="link-icon" data-feather="box"></i>
+              <span class="link-title">Ajouter un produit</span>
+>>>>>>> dd681aa70a90438b395167da18b27dc430395865
             </a>
           </li>
 
           <li class="nav-item">
+<<<<<<< HEAD
             <a href="/add/category" class="nav-link">
               <i class="link-icon" data-feather="gift"></i>
               <span class="link-title">Marques</span>
+=======
+            <a href="/order" class="nav-link">
+              <i class="link-icon" data-feather="shopping-bag"></i>
+              <span class="link-title">Commandes</span>
+>>>>>>> dd681aa70a90438b395167da18b27dc430395865
             </a>
           </li>
 
           <li class="nav-item">
+<<<<<<< HEAD
             <a href="/add/category" class="nav-link">
               <i class="link-icon" data-feather="gift"></i>
               <span class="link-title">Articles</span>
@@ -107,6 +124,13 @@
           {{-- FIN GESTIONS DES PRODUITS --}}
 
 
+=======
+            <a href="/banner" class="nav-link">
+              <i class="link-icon" data-feather="image"></i>
+              <span class="link-title">Bannière</span>
+            </a>
+          </li>
+>>>>>>> dd681aa70a90438b395167da18b27dc430395865
           {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
               <i class="link-icon" data-feather="mail"></i>
@@ -133,7 +157,7 @@
               <span class="link-title">Calendar</span>
             </a>
           </li> --}}
-          
+
           {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#forms" role="button" aria-expanded="false" aria-controls="forms">
               <i class="link-icon" data-feather="inbox"></i>
@@ -164,7 +188,7 @@
               </a>
             </a>
           </li> --}}
-         
+
           {{-- <li class="nav-item nav-category">Pages</li> --}}
           {{-- <li class="nav-item">
             <a href="/invoice" class="nav-link">
@@ -172,7 +196,7 @@
               <span class="link-title">Invoice</span>
             </a>
         </li> --}}
-              
+
           {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#authPages" role="button" aria-expanded="false" aria-controls="authPages">
               <i class="link-icon" data-feather="unlock"></i>
@@ -192,9 +216,9 @@
           </li> --}}
     </nav>
   </div>
-    
+
       @yield('content')
-		
+
 		</div>
 	</div>
 	<!-- core:js -->
@@ -227,4 +251,4 @@
   <script src="{{asset('admin_assets/js/dashboard.js')}}"></script>
 	<!-- end custom js for this page -->
 </body>
-</html>    
+</html>
