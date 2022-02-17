@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CategorieController;
+use App\Http\Controllers\SousCategorieController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -111,13 +113,55 @@ Route::get('/editcontroller', function () {
     return view('admin/pages/editcontroller');
 })->name('editcontroller');
 
-Route::get('/addcategory', function () {
-    return view('admin/pages/addcategory');
-})->name('addcategory');
+// Route::get('/addcategory', function () {
+//     return view('admin/pages/addcategory');
+// })->name('addcategory');
 
 Route::get('/addproduct', function () {
     return view('admin/pages/addproduct');
 })->name('addproduct');
+
+
+// midif TAFH
+
+                            // GESTION DES CATHEGORIES
+
+//afficher les cathegories
+Route::get('/dashboard/category', [CategorieController::class, 'index'])->name('category');
+
+//ajouter une cathrgories
+Route::get('/dashboard/category/add', [CategorieController::class, 'index_add'])->name('add.category');
+Route::post('/dashboard/category/add', [CategorieController::class, 'store'])->name('store.category');
+
+//modifier les cathegories
+Route::get('/dashboard/category/modify/{id}', [CategorieController::class, 'index_mod'])->name('modify.category');
+Route::post('/dashboard/category/modify/{id}', [CategorieController::class, 'update'])->name('update.category');
+
+//supprimer les cathegories
+Route::get('/dashboard/category/delete/{id}', [CategorieController::class, 'destroy'])->name('delete.category');
+
+
+                            // GESTION DES SOUS CATHEGORIES
+
+//afficher les sous cathegories
+Route::get('/dashboard/sous_category', [SousCategorieController::class, 'index'])->name('souscategory');
+
+//ajouter une sous cathrgories
+Route::get('/dashboard/sous_category/add', [SousCategorieController::class, 'index_add'])->name('add.souscategory');
+Route::post('/dashboard/sous_category/add', [SousCategorieController::class, 'store'])->name('store.souscategory');
+
+//modifier les sous cathegories
+// Route::get('/dashboard/sous_category/modify/{id}', [SousCategorieController::class, 'index_mod'])->name('modify.souscategory');
+// Route::post('/dashboard/sous_category/modify/{id}', [SousCategorieController::class, 'update'])->name('update.souscategory');
+
+//supprimer les sous cathegories
+// Route::get('/dashboard/sous_category/delete/{id}', [SousCategorieController::class, 'destroy'])->name('delete.souscategory');
+// Route::post('/dashboard/category/delete/{id}', [CategorieController::class, 'destroy'])->name('delete.category');
+
+
+
+// fin modif TAFH
+
 
 
 // Route::get('/compose', function () {

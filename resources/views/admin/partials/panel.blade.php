@@ -60,12 +60,53 @@
             </a>
           </li>
 
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a href="/addcategory" class="nav-link">
               <i class="link-icon" data-feather="gift"></i>
               <span class="link-title">Ajouter une catégorie</span>
             </a>
+          </li> --}}
+
+          {{-- GESTION DES PRODUITS --}}
+
+
+          <li class="nav-item">
+            <a href="/dashboard/category" class="nav-link">
+              <i class="link-icon" data-feather="gift"></i>
+              <span class="link-title">Catégories</span>
+            </a>
           </li>
+
+          <li class="nav-item">
+            <a href="/dashboard/sous_category" class="nav-link">
+              <i class="link-icon" data-feather="gift"></i>
+              <span class="link-title">Sous Catégories</span>
+            </a>
+          </li>
+           {{-- <li class="nav-item">
+            <a href="/add/category" class="nav-link">
+              <i class="link-icon" data-feather="gift"></i>
+              <span class="link-title">Types</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/add/category" class="nav-link">
+              <i class="link-icon" data-feather="gift"></i>
+              <span class="link-title">Marques</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/add/category" class="nav-link">
+              <i class="link-icon" data-feather="gift"></i>
+              <span class="link-title">Articles</span>
+            </a>
+          </li> --}}
+
+          {{-- FIN GESTIONS DES PRODUITS --}}
+
+
           {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
               <i class="link-icon" data-feather="mail"></i>
